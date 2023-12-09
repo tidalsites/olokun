@@ -27,7 +27,7 @@ export const Capabilities = () => {
         </div>
       </div>
 
-      <div className="bg-neutral-300 grid grid-cols-1 xl:grid-cols-2 xl:gap-4 xl:py-10 py-20 text-black">
+      <div className="bg-zinc-200 grid grid-cols-1 xl:grid-cols-2 xl:gap-4 text-black">
         <div className="flex flex-col py-4">
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Engineering & Technical Services

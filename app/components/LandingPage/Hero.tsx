@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 import { Tenor_Sans } from "next/font/google";
 
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
@@ -29,12 +30,18 @@ export const Hero = () => {
       </p>
       <div className="flex gap-4">
         <Link
-          className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-colors"
+          className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-all flex gap-2 items-center"
           href="/contact"
         >
-          Contact Us
+          <div className="flex p-2 rounded-full bg-black text-white items-center justify-center w-fit">
+            <FaArrowRight />
+          </div>
+          <span className="bg-white">Contact Us</span>
         </Link>
-        <Link className="border-2 border-white rounded px-4 py-1" href="/about">
+        <Link
+          className="border-2 border-white rounded px-4 py-1 flex items-center"
+          href="/about"
+        >
           Learn More
         </Link>
       </div>
