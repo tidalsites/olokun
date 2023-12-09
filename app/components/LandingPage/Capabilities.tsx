@@ -1,46 +1,38 @@
+import bg from "@/public/ingenuity-bg-light.svg";
 import { Tenor_Sans } from "next/font/google";
 import Image from "next/image";
-import bg from "@/public/ingenuity-bg-light.svg";
-// import separator from "@/public/separator.svg";
-import engineeringIcon from "@/public/engineering-icon.svg";
 
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 export const Capabilities = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-[auto,auto] min-h-screen relative">
-      <div className="flex flex-col gap-8 items-start pt-[15vh] py-10 px-4 lg:px-12 max-w-prose mx-auto w-fit">
-        <div className="absolute bottom-0 left-0 max-w-2xl">
-          <Image src={bg} alt="Ingenuity decoration" />
-        </div>
-        <h2 className={`${tenor.className} text-2xl lg:text-4xl`}>
-          Capabilities
-        </h2>
-        <p className="max-w-[40ch] leading-8">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-          velit cupiditate repudiandae. Voluptatem ex provident, totam
-          distinctio facere, laudantium molestiae nobis et velit aspernatur
-          saepe?
-        </p>
-        <button className="px-4 py-1 rounded bg-white text-black">
-          Learn More
-        </button>
+      <div className="absolute bottom-0 left-0 max-w-2xl">
+        <Image src={bg} alt="Ingenuity decoration" />
       </div>
-      <div className="bg-neutral-300 px-4 grid grid-cols-1 gap-8 xl:grid-cols-2 py-20 text-black">
-        <div className="flex flex-col">
-          {/* <Image
-            src={engineeringIcon}
-            alt=""
-            className="absolute -z-10 max-w-[50%] -translate-y-[25%] -translate-x-[15%]"
-          /> */}
+      <div className="relative">
+        <div className="flex flex-col gap-8 items-start pt-[15vh] py-10 px-4 lg:px-12 max-w-prose mx-auto w-fit sticky top-0">
+          <h2 className={`${tenor.className} text-2xl lg:text-4xl`}>
+            Capabilities
+          </h2>
+          <p className="max-w-[40ch] leading-8">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
+            velit cupiditate repudiandae. Voluptatem ex provident, totam
+            distinctio facere, laudantium molestiae nobis et velit aspernatur
+            saepe?
+          </p>
+          <button className="px-4 py-1 rounded bg-white text-black">
+            Learn More
+          </button>
+        </div>
+      </div>
 
+      <div className="bg-neutral-300 grid grid-cols-1 xl:grid-cols-2 xl:gap-4 xl:py-10 py-20 text-black">
+        <div className="flex flex-col py-4">
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Engineering & Technical Services
           </h3>
 
-          {/* <div className="mx-auto">
-            <Image src={separator} alt="" />
-          </div> */}
           <p className="px-4 max-w-prose leading-8 grow py-4 flex items-center text-lg lg:px-8">
             Engineering and Technical Services are one of Olokun&apos;s core
             competencies. Our approach is to adapt to our customer requirements
@@ -48,7 +40,7 @@ export const Capabilities = () => {
             producibility.
           </p>
         </div>
-        <div className="flex flex-col bg-white">
+        <div className="flex flex-col bg-white py-4">
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Logistics Support
           </h3>
@@ -60,7 +52,7 @@ export const Capabilities = () => {
             is adaptable to our customer&apos;s requirements and standards.
           </p>
         </div>
-        <div className="flex flex-col bg-white">
+        <div className="flex flex-col py-4 xl:bg-white">
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Information Technology
           </h3>
@@ -76,7 +68,7 @@ export const Capabilities = () => {
             solve challenging technical and business problems.
           </p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col py-4 bg-white xl:bg-transparent">
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Consulting
           </h3>

@@ -12,6 +12,7 @@ export const Hero = () => {
           className="w-[177.77777778vh] min-w-full min-h-[56.25vw] h-full object-cover"
           autoPlay
           muted
+          loop
         >
           <source src="/hero.mp4" />
         </video>

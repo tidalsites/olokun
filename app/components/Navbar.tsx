@@ -11,13 +11,16 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Link from "next/link";
+import logoLight from "@/public/logo-light.svg";
+import logo from "@/public/logo.svg";
+import Image from "next/image";
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
     <Navbar
-      className="bg-transparent text-white absolute top-0"
+      className="bg-transparent text-white absolute top-0 py-4"
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent>
@@ -25,13 +28,17 @@ export default function Nav() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand>
-          {/* <AcmeLogo /> */}
-          <p className="font-bold text-inherit">Olokun</p>
+        <NavbarBrand className="py-4">
+          <Link href="/" className="py-4">
+            <Image src={logo} alt="Olokun LLC" />
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent
+        className="hidden sm:flex gap-4 items-center h-full"
+        justify="center"
+      >
         <NavbarItem>
           <Link href="/">Home</Link>
         </NavbarItem>
