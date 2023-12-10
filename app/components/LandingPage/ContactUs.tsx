@@ -15,7 +15,7 @@ export const ContactUs = () => {
           Contact Our Team
         </Link>
       </div>
-      <div className="bg-black hidden lg:block bg-[url(/contact-graphic.png)] bg-cover overflow-hidden relative after:absolute after:h-full after:aspect-square after:-rotate-45 after:origin-bottom-left after:bg-zinc-200"></div>
+      <div className="bg-black hidden lg:block bg-[url(/contact-graphic-light.png)] bg-cover overflow-hidden relative after:absolute after:h-full after:aspect-square after:-rotate-45 after:-bottom-4 after:origin-bottom-left after:bg-zinc-200 after:border-double after:border-[12px] after:border-red-700 after:outline after:outline-4 after:outline-white"></div>
     </section>
   );
 };

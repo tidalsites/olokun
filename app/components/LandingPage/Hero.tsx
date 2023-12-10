@@ -30,16 +30,16 @@ export const Hero = () => {
       </p>
       <div className="flex gap-4">
         <Link
-          className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-all flex gap-2 items-center"
+          className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-all flex gap-2 items-center group"
           href="/contact"
         >
-          <div className="flex p-2 rounded-full bg-black text-white items-center justify-center w-fit">
+          <div className="flex p-2 rounded-full bg-black text-white items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
             <FaArrowRight />
           </div>
           <span className="bg-white">Contact Us</span>
         </Link>
         <Link
-          className="border-2 border-white rounded px-4 py-1 flex items-center"
+          className="border-2 border-white rounded px-4 py-1 flex items-center relative after:absolute after:inset-0 after:scale-x-0 after:bg-white hover:text-black hover:after:scale-x-100 transition-all after:-z-10"
           href="/about"
         >
           Learn More

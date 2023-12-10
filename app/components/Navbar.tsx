@@ -20,7 +20,7 @@ export default function Nav() {
 
   return (
     <Navbar
-      className="bg-transparent text-white absolute top-0 py-4"
+      className="bg-black/90 backdrop-blur-sm text-white sticky top-0 py-4"
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent>

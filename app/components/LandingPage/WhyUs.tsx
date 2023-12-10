@@ -43,10 +43,10 @@ export const WhyUs = () => {
               className="max-h-full w-auto"
             />
           </div>
-          <span className="font-semibold bg-white z-20 h-full flex items-center">
+          <span className="font-semibold bg-white z-20 h-full flex items-center rounded-full px-4">
             Find out more about CompleteCloud
           </span>
-          <div className="flex justify-center items-center p-2 rounded-full bg-black text-white -translate-x-[200%] transition-all opacity-0 z-10 group-hover:translate-x-0 group-hover:opacity-100">
+          <div className="flex justify-center items-center p-2 rounded-full bg-black text-white -translate-x-[calc(100%+1rem+1px)] transition-all z-10 group-hover:translate-x-0 group-hover:justify-end group-hover:pl-6">
             <FaArrowRight />
           </div>
         </Link>

@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { FaEnvelope, FaFacebook, FaPhone } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaFacebook,
+  FaPhone,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -80,15 +86,41 @@ export const Footer = () => {
             <span>Chesapeake, VA 23322</span>
           </div>
           <div className="flex flex-wrap gap-4 mt-8">
-            <div className="text-lg grid place-content-center rounded-full bg-white/10 p-2">
+            <Link
+              href="tel:+17578445522"
+              className="text-lg grid place-content-center rounded-full bg-white/10 p-2 transition-all hover:bg-white hover:text-black"
+              aria-label="Phone"
+            >
               <FaPhone />
-            </div>
-            <div className="text-lg grid place-content-center rounded-full bg-white/10 p-2">
+            </Link>
+            <Link
+              href="/contact"
+              className="text-lg grid place-content-center rounded-full bg-white/10 p-2 transition-all hover:bg-white hover:text-black"
+              aria-label="Email"
+            >
               <FaEnvelope />
-            </div>
-            <div className="text-lg grid place-content-center rounded-full bg-white/10 p-2">
+            </Link>
+            <Link
+              href="https://facebook.com"
+              className="text-lg grid place-content-center rounded-full bg-white/10 p-2 transition-all hover:bg-white hover:text-black"
+              aria-label="Facebook"
+            >
               <FaFacebook />
-            </div>
+            </Link>
+            <Link
+              href="https://linkedin.com"
+              className="text-lg grid place-content-center rounded-full bg-white/10 p-2 transition-all hover:bg-white hover:text-black"
+              aria-label="Linkedin"
+            >
+              <FaLinkedin />
+            </Link>
+            <Link
+              href="https://twitter.com"
+              className="text-lg grid place-content-center rounded-full bg-white/10 p-2 transition-all hover:bg-white hover:text-black"
+              aria-label="Twitter"
+            >
+              <FaTwitter />
+            </Link>
           </div>
         </section>
       </div>
