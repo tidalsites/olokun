@@ -1,16 +1,14 @@
-import { Vision } from "./Vision";
-import { Tenor_Sans } from "next/font/google";
-import Link from "next/link";
-const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
-import vernon from "@/public/vernon.png";
-import bert from "@/public/Roberto-Bert-Ortiz.jpg";
 import donald from "@/public/Donald-A.-Buzard.jpg";
+import bert from "@/public/Roberto-Bert-Ortiz.jpg";
+import vernon from "@/public/vernon.png";
+import { Tenor_Sans } from "next/font/google";
 import Image from "next/image";
-import { FaCheck, FaCheckCircle } from "react-icons/fa";
+import { Vision } from "./Vision";
+const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 export default function About() {
   return (
-    <section className="min-h-screen h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">About Us</h1>
         <div className="flex flex-col">
