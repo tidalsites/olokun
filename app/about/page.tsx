@@ -1,6 +1,6 @@
 import donald from "@/public/Donald-A.-Buzard.jpg";
 import bert from "@/public/Roberto-Bert-Ortiz.jpg";
-import vernon from "@/public/vernon.png";
+import vernon from "@/public/vernon-cropped.png";
 import { Tenor_Sans } from "next/font/google";
 import Image from "next/image";
 import { Vision } from "./Vision";
@@ -22,11 +22,15 @@ export default function About() {
             local, state, and federal government organizations, military,
             private industry, and public entities.
           </p>
-          <div className="bg-black py-8 text-white grid grid-cols-[auto,auto] mt-8 gap-y-8">
-            <div className="-translate-y-12">
-              <Image src={vernon} alt="Vernon M. Hall Jr." />
+          <div className="bg-black py-8 text-white grid grid-cols-[auto,1fr] mt-8 gap-y-8">
+            <div className="-translate-y-12 max-h-[400px] mx-8 w-fit">
+              <Image
+                src={vernon}
+                alt="Vernon M. Hall Jr."
+                className="max-h-full w-auto border-2 border-black rounded"
+              />
             </div>
-            <div className="max-w-prose flex flex-col grow">
+            <div className="max-w-prose flex flex-col grow mx-auto">
               <span className="text-lg">Vernon M. Hall Jr.</span>
               <span className="text-sm text-zinc-200">Founder & CEO</span>
               <p className="mt-8">

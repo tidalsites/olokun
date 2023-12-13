@@ -21,7 +21,7 @@ export const Capabilities = () => {
             distinctio facere, laudantium molestiae nobis et velit aspernatur
             saepe?
           </p>
-          <button className="px-4 py-1 rounded bg-white text-black">
+          <button className="px-4 py-1 rounded bg-white text-black brightness-90 hover:brightness-100">
             Learn More
           </button>
         </div>
@@ -81,6 +81,18 @@ export const Capabilities = () => {
             strategies that will display our customers&apos; abilities to meet
             the requirements with a sound solution.
           </p>
+        </div>
+        <div className="py-4 border-t-2 border-b-2 border-t-red-700 border-b-red-700 flex flex-wrap gap-4 col-span-2 bg-white justify-center items-center font-bold text-lg">
+          <span className="font-normal text-sm">NAICS Codes:</span>
+          <span className="border-r-[1px] border-r-zinc-300 px-4">541330</span>
+          <span className="border-r-[1px] border-r-zinc-300 px-4">541310</span>
+          <span className="border-r-[1px] border-r-zinc-300 px-4">336611</span>
+          <span className="border-r-[1px] border-r-zinc-300 px-4">541512</span>
+          <span className="border-r-[1px] border-r-zinc-300 px-4">541611</span>
+          <span className="border-r-[1px] border-r-zinc-300 px-4">541618</span>
+          <span className="border-r-[1px] border-r-zinc-300 px-4">541990</span>
+          <span className="border-r-[1px] border-r-zinc-300 px-4">541690</span>
+          <span className="px-4">541614</span>
         </div>
       </div>
     </section>
