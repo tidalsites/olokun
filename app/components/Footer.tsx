@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   FaEnvelope,
@@ -6,6 +7,8 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+
+import innovate from "@/public/innovate.png";
 
 export const Footer = () => {
   return (
@@ -21,6 +24,9 @@ export const Footer = () => {
           local, state, and federal government organizations, military, private
           industry, and public entities.
         </p>
+        <div className="h-[45px] w-auto mt-8">
+          <Image src={innovate} alt="innovate" className="max-h-full w-auto" />
+        </div>
       </section>
       <div className="flex flex-wrap gap-8 justify-around grow max-w-5xl mx-auto">
         <section className="p-4">

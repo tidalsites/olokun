@@ -1,10 +1,13 @@
+import { Tenor_Sans } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
+import { Vision } from "./Vision";
+const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
+
 import donald from "@/public/Donald-A.-Buzard.jpg";
 import bert from "@/public/Roberto-Bert-Ortiz.jpg";
 import vernon from "@/public/vernon-cropped.png";
-import { Tenor_Sans } from "next/font/google";
-import Image from "next/image";
-import { Vision } from "./Vision";
-const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 export default function About() {
   return (
@@ -127,11 +130,13 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="mt-20">
-          <h2 className={`${tenor.className} text-4xl text-zinc-800`}>
+        <div className="mt-20 grid grid-cols-2 gap-8">
+          <h2
+            className={`${tenor.className} text-4xl text-zinc-800 col-span-2`}
+          >
             Who We Serve
           </h2>
-          <p className="max-w-prose leading-6 py-8">
+          <p className="max-w-prose leading-6 py-8 col-span-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste
             dolor corporis eius doloremque eum error expedita soluta ut,
             accusantium vero, repellat ea dolorem veniam, est voluptate
@@ -140,13 +145,63 @@ export default function About() {
             esse corporis, sit ea molestias. Ut, blanditiis ullam. Quaerat,
             tempore inventore!
           </p>
-          <p className="max-w-prose leading-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
-            ducimus voluptatem? Quaerat ratione molestiae deserunt nesciunt
-            voluptatum fuga nobis odio quis repellat ullam laudantium eius quae
-            minima expedita commodi ea laboriosam optio accusantium
-            reprehenderit, officiis perspiciatis amet. Obcaecati?
-          </p>
+          <div className="bg-white rounded">
+            <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-red-700">
+              Government
+            </h3>
+            <div className="relative isolate">
+              <p className="max-w-prose leading-6 py-8 bg-white p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                iste dolor corporis eius doloremque eum error expedita soluta
+                ut, accusantium vero, repellat ea dolorem veniam, est voluptate
+                reiciendis assumenda? Distinctio dolorem alias qui animi ipsum
+                voluptate dignissimos quo, quod vero nihil dolores tempore
+                veniam esse corporis, sit ea molestias. Ut, blanditiis ullam.
+                Quaerat, tempore inventore!
+              </p>
+              <p className="max-w-prose leading-6 bg-white p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis, ducimus voluptatem? Quaerat ratione molestiae
+                deserunt nesciunt voluptatum fuga nobis odio quis repellat ullam
+                laudantium eius quae minima expedita commodi ea laboriosam optio
+                accusantium reprehenderit, officiis perspiciatis amet.
+                Obcaecati?
+              </p>
+            </div>
+          </div>
+          <div className="bg-white">
+            <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-red-700">
+              Commercial
+            </h3>
+            <div className="p-4">
+              <p className="max-w-prose leading-6 py-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                iste dolor corporis eius doloremque eum error expedita soluta
+                ut, accusantium vero, repellat ea dolorem veniam, est voluptate
+                reiciendis assumenda? Distinctio dolorem alias qui animi ipsum
+                voluptate dignissimos quo, quod vero nihil dolores tempore
+                veniam esse corporis, sit ea molestias. Ut, blanditiis ullam.
+                Quaerat, tempore inventore!
+              </p>
+              <p className="max-w-prose leading-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis, ducimus voluptatem? Quaerat ratione molestiae
+                deserunt nesciunt voluptatum fuga nobis odio quis repellat ullam
+                laudantium eius quae minima expedita commodi ea laboriosam optio
+                accusantium reprehenderit, officiis perspiciatis amet.
+                Obcaecati?
+              </p>
+            </div>
+          </div>
+          <Link
+            href="/capabilities"
+            className="px-4 py-1 bg-black text-white rounded w-fit flex items-center gap-2 group mx-auto col-span-2 my-8 transition-all "
+          >
+            <div className="flex p-2 rounded-full bg-white text-black items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
+              <FaArrowRight />
+            </div>
+            <span>Check out our Capabilities</span>
+          </Link>
         </div>
         <div className="mt-20">
           <h2 className={`${tenor.className} text-4xl text-zinc-800`}>

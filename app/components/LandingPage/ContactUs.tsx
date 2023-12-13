@@ -2,6 +2,8 @@ import { Tenor_Sans } from "next/font/google";
 import Link from "next/link";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
+import { FaArrowRight } from "react-icons/fa";
+
 export const ContactUs = () => {
   return (
     <section className="min-h-[200px] bg-zinc-200 grid grid-cols-2">
@@ -11,8 +13,16 @@ export const ContactUs = () => {
         >
           Get Started Today!
         </h2>
-        <Link href="/contact" className="px-4 py-1 rounded bg-red-700 w-fit">
-          Contact Our Team
+        <Link
+          href="/contact"
+          className="p-2 rounded max-h-[50px] w-fit flex gap-4 group items-center bg-white text-black border-2 border-red-700"
+        >
+          <div className="bg-red-700 rounded-full text-white p-2 group-hover:pl-3 transition-all flex items-center">
+            <FaArrowRight className="text-2xl" />
+          </div>
+          <span className="text-lg font-semibold group-hover:pr-2 transition-all">
+            Contact Us
+          </span>
         </Link>
       </div>
       <div className="bg-black hidden lg:block bg-[url(/contact-graphic-light.png)] bg-cover overflow-hidden relative after:absolute after:h-full after:aspect-square after:-rotate-45 after:-bottom-4 after:origin-bottom-left after:bg-zinc-200 after:border-double after:border-[12px] after:border-red-700 after:outline after:outline-4 after:outline-white"></div>
