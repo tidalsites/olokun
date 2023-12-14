@@ -25,6 +25,21 @@ export default function About() {
             local, state, and federal government organizations, military,
             private industry, and public entities.
           </p>
+          <p className="max-w-prose leading-6 py-4">
+            Olokun, LLC (UEID: M7JSB8E7KB73, Cage Code: 95V71) is registered in
+            the System of Award Management (SAM) under primary NAICS 541330 for
+            Engineering Services and various secondary NAICS codes associated
+            with Consulting, Management, Professional, and Technical services.
+          </p>
+          <p className="max-w-prose leading-6 py-4">
+            Since our founding on June 10, 2021, Olokun is uniquely situated to
+            leverage our management expertise and professional talents related
+            to Maritime Industry Modernization, Engineering, Capture Management,
+            Strategic Teaming, and Life-Cycle Logistics to provide a quality,
+            cost effective solution to our customers. Based on the past two (2)
+            years of customer feedback, Olokun is disciplined by process and
+            adaptive to customer needs.
+          </p>
           <div className="bg-black py-8 text-white grid grid-cols-[auto,1fr] mt-8 gap-y-8">
             <div className="-translate-y-12 max-h-[400px] mx-8 w-fit">
               <Image

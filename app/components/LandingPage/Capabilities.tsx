@@ -16,10 +16,11 @@ export const Capabilities = () => {
             Capabilities
           </h2>
           <p className="max-w-[40ch] leading-8">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-            velit cupiditate repudiandae. Voluptatem ex provident, totam
-            distinctio facere, laudantium molestiae nobis et velit aspernatur
-            saepe?
+            At Olokun, we redefine the standards of government contracting
+            through our unwavering commitment to excellence. Our expertise
+            extends across a spectrum of critical domains, positioning us as
+            leaders in consulting, engineering and technical services,
+            logistics, and information technology.
           </p>
           <button className="px-4 py-1 rounded bg-white text-black brightness-90 hover:brightness-100">
             Learn More
