@@ -33,7 +33,7 @@ export default function Capabilities() {
           <h2 className={`${tenor.className} text-4xl text-zinc-800`}>
             Engineering & Technical Services
           </h2>
-          <div className="row-span-2 w-full h-full">
+          <div className="row-span-2 w-full h-full flex justify-end">
             <Image
               src={engineering}
               alt="U.S. Navy Ship"
@@ -163,7 +163,7 @@ export default function Capabilities() {
           <h2 className={`${tenor.className} text-4xl text-zinc-800`}>
             Information Technology
           </h2>
-          <div className="row-span-2">
+          <div className="row-span-2 flex justify-end">
             <Image src={it} alt="Digital cloud" className="max-h-full w-auto" />
           </div>
           <div className="flex flex-col gap-8 mb-20">

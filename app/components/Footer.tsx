@@ -28,7 +28,7 @@ export const Footer = () => {
           <Image src={innovate} alt="innovate" className="max-h-full w-auto" />
         </div>
       </section>
-      <div className="flex flex-wrap gap-8 justify-around grow max-w-5xl mx-auto">
+      <div className="flex flex-wrap gap-8 md:justify-around grow max-w-5xl mx-auto">
         <section className="p-4">
           <p className="text-lg border-b-2 border-b-white w-fit pr-8">Links</p>
           <nav
