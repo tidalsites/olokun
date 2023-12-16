@@ -1,92 +1,85 @@
 "use client";
 
-import React from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-} from "@nextui-org/react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import logoLight from "@/public/logo-light.svg";
 import logo from "@/public/logo.svg";
 import Image from "next/image";
 
+import { PiListBold, PiXBold } from "react-icons/pi";
+
 export default function Nav() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const updateMenuState = () => {
+    return setIsMenuOpen((prev) => !prev);
+  };
 
   return (
-    <Navbar
-      className="bg-black/90 backdrop-blur-sm text-white sticky top-0 py-4"
-      onMenuOpenChange={setIsMenuOpen}
-    >
-      <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
-        <NavbarBrand className="py-4">
-          <Link href="/" className="py-4">
-            <Image src={logo} alt="Olokun LLC" />
-          </Link>
-        </NavbarBrand>
-      </NavbarContent>
-
-      <NavbarContent
-        className="hidden sm:flex gap-4 items-center h-full"
-        justify="center"
+    <div className="h-[--navbar-height]">
+      <nav
+        className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4"
+        aria-label="Primary Navigation"
       >
-        <NavbarItem>
+        <button
+          onClick={() => {
+            updateMenuState();
+          }}
+          aria-controls="mobile-nav"
+          aria-label="Mobile Menu Toggle"
+        >
+          {isMenuOpen ? (
+            <PiXBold className="text-zinc-200 text-4xl w-fit px-4 md:hidden" />
+          ) : (
+            <PiListBold className="text-zinc-200 text-4xl w-fit px-4 md:hidden" />
+          )}
+        </button>
+
+        <div className="h-full flex items-center grow">
+          <Image src={logo} alt="Olokun LLC" className="h-full w-auto" />
+        </div>
+        <div className="hidden md:flex gap-4">
           <Link href="/">Home</Link>
-        </NavbarItem>
-        <NavbarItem>
           <Link href="/about">About</Link>
-        </NavbarItem>
-        <NavbarItem>
           <Link href="/capabilities">Capabilities</Link>
-        </NavbarItem>
-        <NavbarItem>
           <Link href="/work">Our Work</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="/contact">Contact</Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarMenu className="bg-neutral-200 text-black">
-        <NavbarMenuItem>
-          <Link className="w-full" href="/">
-            Home
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link className="w-full" href="/about">
-            About
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link className="w-full" href="/capabilities">
-            Capabilities
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link className="w-full" href="/completecloud">
+          <Link href="/completecloud" className="hidden lg:block">
             CompleteCloud
           </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link className="w-full" href="work">
+          <Link href="/contact">Contact</Link>
+        </div>
+      </nav>
+      <nav
+        className={`absolute h-[calc(100vh-var(--navbar-height))] top-[--navbar-height] left-0 z-30 bg-black/20 backdrop-blur-sm w-screen md:hidden transition-all ${
+          !isMenuOpen ? "-translate-x-full" : "translate-x-0"
+        }`}
+        onClick={(e) => {
+          const target = e.target as EventTarget & HTMLElement;
+          if (target.nodeName === "NAV") setIsMenuOpen(false);
+        }}
+        id="mobile-nav"
+        aria-label="Mobile Navigation"
+      >
+        <div className="w-[min(100vw,400px)] flex flex-col gap-4 p-7 bg-zinc-200 text-black h-full">
+          <Link onClick={() => setIsMenuOpen(false)} href="/">
+            Home
+          </Link>
+          <Link onClick={() => setIsMenuOpen(false)} href="/about">
+            About
+          </Link>
+          <Link onClick={() => setIsMenuOpen(false)} href="/capabilities">
+            Capabilities
+          </Link>
+          <Link onClick={() => setIsMenuOpen(false)} href="/work">
             Our Work
           </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link className="w-full" href="/contact">
+          <Link onClick={() => setIsMenuOpen(false)} href="/completecloud">
+            CompleteCloud
+          </Link>
+          <Link onClick={() => setIsMenuOpen(false)} href="/contact">
             Contact
           </Link>
-        </NavbarMenuItem>
-      </NavbarMenu>
-    </Navbar>
+        </div>
+      </nav>
+    </div>
   );
 }
