@@ -5,7 +5,7 @@ const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 export const Hero = () => {
   return (
-    <section className="gap-8 grid lg:place-content-center min-h-[calc(100vh-var(--navbar-height))] lg:h-screen w-screen relative isolate px-4 bg-[url(/mobile-bg.png)] bg-black/90 bg-center bg-cover bg-blend-multiply">
+    <section className="gap-8 grid lg:place-content-center min-h-[calc(100vh-var(--navbar-height))] lg:h-screen w-screen relative isolate px-4 bg-[url(/mobile-bg.png)] lg:bg-none lg:bg-black bg-black/90 bg-center bg-cover bg-blend-multiply">
       <div className="absolute inset-0 max-h-screen overflow-hidden -z-20 hidden lg:block">
         <video
           className="w-[177.77777778vh] min-w-full min-h-[56.25vw] h-full object-cover"
@@ -53,7 +53,7 @@ export const Hero = () => {
             className="border-2 border-white rounded px-4 py-1 flex items-center justify-center relative after:absolute after:inset-0 after:scale-x-0 after:bg-white hover:text-black hover:after:scale-x-100 transition-all after:-z-10"
             href="/about"
           >
-            Learn More
+            Learn About Us
           </Link>
         </div>
       </div>

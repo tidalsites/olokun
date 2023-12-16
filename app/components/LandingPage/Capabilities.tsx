@@ -25,9 +25,9 @@ export const Capabilities = () => {
           </p>
           <Link
             href="/capabilities"
-            className="px-4 py-1 rounded bg-white text-black brightness-90 hover:brightness-100"
+            className="px-4 py-1 rounded bg-white text-black"
           >
-            Learn More
+            View All Capabilities
           </Link>
         </div>
       </div>
