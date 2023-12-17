@@ -21,7 +21,7 @@ export const Map = () => {
         zoom={14}
         center={location}
         mapContainerClassName="gmap"
-        mapContainerStyle={{ width: "100%" }}
+        mapContainerStyle={{ width: "100%", height: 400 }}
       >
         <Marker position={location} />
       </GoogleMap>
