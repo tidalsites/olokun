@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import "./globals.css";
-import { Providers } from "./providers";
 import Nav from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
@@ -21,11 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mont.className}>
-        <Providers>
-          <Nav />
-          {children}
-          <Footer />
-        </Providers>
+        <Nav />
+        {children}
+        <Footer />
       </body>
     </html>
   );

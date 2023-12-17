@@ -9,13 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.2.9",
-    "framer-motion": "^10.16.16",
+    "@hookform/resolvers": "^3.3.2",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.49.2",
     "react-icons": "^4.12.0",
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
