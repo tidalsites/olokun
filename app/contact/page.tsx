@@ -177,23 +177,23 @@ export default function Contact() {
             </button>
           </form>
           <div className="flex flex-col gap-4 w-fit mx-auto">
-            <p className="flex items-center isolate">
+            <div className="flex items-center isolate">
               <div className="p-4 rounded-full bg-white">
                 <FaEnvelope className="text-xl" />
               </div>
               <span className="bg-white rounded-full py-1 px-4 -ml-4 -z-10">
                 vernon.hall@olokunllc.com
               </span>
-            </p>
-            <p className="flex items-center isolate">
+            </div>
+            <div className="flex items-center isolate">
               <span className="bg-white rounded-full py-1 px-4 -z-10 -mr-4">
                 (757) 844-5522
               </span>
               <div className="p-4 rounded-full bg-white">
                 <FaPhone className="text-xl" />
               </div>
-            </p>
-            <p className="flex isolate">
+            </div>
+            <div className="flex isolate">
               <div className="p-4 rounded-full bg-white h-fit">
                 <FaMap className="text-xl" />
               </div>
@@ -202,7 +202,7 @@ export default function Contact() {
                 <span>Suite 101-B</span>
                 <span>Chesapeake, VA 23322</span>
               </div>
-            </p>
+            </div>
             <div className="flex flex-wrap justify-center gap-2">
               <Link
                 href="tel:+17578445522"
