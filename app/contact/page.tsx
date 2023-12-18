@@ -12,11 +12,12 @@ import {
 import { RiMailSendLine } from "react-icons/ri";
 import jobsearch from "@/public/jobsearch.png";
 import Image from "next/image";
-import { PiCaretDown, PiCheckLight } from "react-icons/pi";
-import { useForm } from "react-hook-form";
+import { PiCaretDown, PiCheckLight, PiSpinner } from "react-icons/pi";
+import { FieldValues, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { TContactSchema, ContactSchema } from "@/schemas/contact";
 import { Map } from "../components/GoogleMap";
+import { sendContactEmail } from "@/lib/sendEmail";
 
 export default function Contact() {
   const {
@@ -24,13 +25,13 @@ export default function Contact() {
     handleSubmit,
     reset,
     watch,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm<TContactSchema>({
     resolver: zodResolver(ContactSchema),
   });
 
-  const sendContactRequest = () => {
-    alert("DEVMODE: Form has not been connected to email client");
+  const sendContactRequest = async (data: TContactSchema) => {
+    await sendContactEmail(data);
     reset();
   };
 
@@ -168,12 +169,21 @@ export default function Contact() {
               )}
             </div>
 
-            <button className="rounded px-4 py-1 mt-8 w-fit bg-black text-white flex gap-2 items-center group hover:bg-green-700">
+            <button
+              disabled={isSubmitting}
+              className={`${
+                isSubmitting ? "bg-neutral-700" : "bg-black "
+              }rounded px-4 py-1 mt-8 w-fit text-white flex gap-2 items-center group hover:bg-green-700"`}
+            >
               <span className="text-lg group-hover:pl-2 transition-all">
                 Submit
               </span>
               <div className="rounded-full bg-white p-2 grid place-content-center text-black transition-all">
-                <RiMailSendLine className="text-2xl" />
+                {isSubmitting ? (
+                  <PiSpinner className="animate-spin text-2xl" />
+                ) : (
+                  <RiMailSendLine className="text-2xl" />
+                )}
               </div>
             </button>
           </form>
@@ -264,14 +274,6 @@ export default function Contact() {
             </Link>
           </div>
           <div className="my-8 col-span-2">
-            {/* <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12790.136866360528!2d-76.2225191!3d36.7337463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ba9708ea5b9ef3%3A0xcb514dfcf96f7249!2sOlokun%20LLC!5e0!3m2!1sen!2sus!4v1702218870134!5m2!1sen!2sus"
-              style={{ border: 0, width: "100%", minHeight: "400px" }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Google Maps"
-            ></iframe> */}
             <Map />
           </div>
         </div>
