@@ -2,16 +2,16 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export const Vision = () => {
   return (
-    <section className="grid grid-cols-2 grid-rows-2 gap-2 place-content-center my-8">
-      <div className="py-8 bg-white px-4 ">
+    <section className="grid grid-cols-2 gap-2 place-content-center my-8">
+      <div className="py-8 bg-white px-4 col-span-2 md:col-span-1">
         <p>Vision</p>
-        <p className="text-2xl font-semibold py-8 text-center">
+        <p className="text-2xl font-semibold py-8 md:text-center">
           A place where ingenuity and innovation is analyzed in every solution.
         </p>
       </div>
-      <div className="py-8 bg-white px-4">
+      <div className="py-8 bg-white px-4 col-span-2 md:col-span-1">
         <p>Mission</p>
-        <p className="text-2xl font-semibold py-8 text-center">
+        <p className="text-2xl font-semibold py-8 md:text-center">
           Promote ingenuity and innovation in every product, service, and
           solution.
         </p>
@@ -19,7 +19,7 @@ export const Vision = () => {
       <div className="col-span-2 py-8 bg-white px-4 relative">
         <div className="absolute left-[50%] top-0 bg-white border-8 border-zinc-200 h-8 w-8 -translate-x-[50%] -translate-y-[calc(50%+4px)] rotate-45"></div>
         <p>Core Values</p>
-        <ul className="flex flex-wrap gap-4 justify-between items-center h-full">
+        <ul className="flex flex-wrap gap-4 md:justify-between items-center h-full">
           <li className="text-xl py-2 border-b-2 border-b-red-700">
             Accountable
           </li>
@@ -33,7 +33,7 @@ export const Vision = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col max-w-prose bg-white p-4">
+      <div className="flex flex-col max-w-prose bg-white p-4 col-span-2 md:col-span-1">
         <p>Guiding Principles</p>
         <div>
           <ul>
@@ -76,7 +76,7 @@ export const Vision = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col max-w-prose bg-white p-4">
+      <div className="flex flex-col max-w-prose bg-white p-4 col-span-2 md:col-span-1">
         <p>Attributes That Set Us Apart</p>
         <div>
           <ul>

@@ -40,15 +40,15 @@ export default function About() {
             years of customer feedback, Olokun is disciplined by process and
             adaptive to customer needs.
           </p>
-          <div className="bg-black py-8 text-white grid grid-cols-[auto,1fr] mt-8 gap-y-8">
-            <div className="-translate-y-12 max-h-[400px] mx-8 w-fit">
+          <div className="bg-black py-8 text-white flex flex-col md:grid md:grid-cols-[auto,1fr] md:mt-8 -mx-4 lg:mx-0 gap-8">
+            <div className="md:-translate-y-12 max-h-[400px] lg:mx-8 ml-4 w-fit">
               <Image
                 src={vernon}
                 alt="Vernon M. Hall Jr."
                 className="max-h-full w-auto border-2 border-black rounded"
               />
             </div>
-            <div className="max-w-prose flex flex-col grow mx-auto">
+            <div className="max-w-prose flex flex-col grow mr-auto px-4">
               <span className="text-lg">Vernon M. Hall Jr.</span>
               <span className="text-sm text-zinc-200">Founder & CEO</span>
               <p className="mt-8">
@@ -76,9 +76,9 @@ export default function About() {
                 commercial clients.
               </p>
             </div>
-            <div className="border-t-8 pt-10 border-zinc-200 col-span-2 px-8">
+            <div className="border-t-4 lg:border-t-8 pt-10 border-zinc-200 col-span-2 px-4 lg:px-8">
               <p className="pb-8 col-span-2">Meet our Board of Advisors</p>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
                 <div className="flex flex-col gap-4 col-span-1">
                   <div className="h-[200px]">
                     <Image
@@ -94,35 +94,6 @@ export default function About() {
                     <span className="text-sm text-zinc-200">
                       Founder/Co-Owner/President/CEO of AVMAC LLC
                     </span>
-                    {/* <p className="mt-8">
-                      A senior aviation and shipboard management professional,
-                      Bert retired as a Commander from the U.S. Navy after a
-                      31-year career and started AVMAC in 2009 with Don Buzard,
-                      a shipmate and a 30-year U.S. Navy retired Commander. Bert
-                      has extensive aircraft and shipboard management,
-                      maintenance, acquisition, logistics, operations and safety
-                      experience that both he and Don leveraged to provide
-                      aviation and maritime support services to both the
-                      Government and private industry. Bert has incrementally
-                      grown AVMAC every year into a multimillion-dollar
-                      award-winning company. Nationally, AVMAC has been
-                      recognized as a Inc. Magazine Private Titan in 2020 and
-                      has made the Inc. 5000 list of fastest growing businesses
-                      the past two years with over 500 employees and revenues
-                      exceeding $50M. AVMAC was named the City of Chesapeake
-                      Business of the Year in 2021 and listed as the Inside
-                      Business Hampton Roads top 20 Fastest growing business for
-                      five years in a row. Bert leads all aspects of the
-                      company&apos;s development and was named as the Small
-                      Business Administration&apos;s Person of the Year in the
-                      Commonwealth of Virginia and the National second runner-up
-                      in 2019. Bert completed his degree in Business
-                      Administration with a specialization in Technology
-                      Management from St. Leo University and has completed his
-                      Defense Acquisition University certifications in
-                      Acquisition and Logistics as well as Production, Quality
-                      and Manufacturing.
-                    </p> */}
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 col-span-1">
@@ -160,7 +131,7 @@ export default function About() {
             esse corporis, sit ea molestias. Ut, blanditiis ullam. Quaerat,
             tempore inventore!
           </p>
-          <div className="bg-white rounded">
+          <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0">
             <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-red-700">
               Government
             </h3>
@@ -184,7 +155,7 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="bg-white">
+          <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0">
             <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-red-700">
               Commercial
             </h3>
