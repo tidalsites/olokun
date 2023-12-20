@@ -1,17 +1,75 @@
+"use client";
+
 import bg from "@/public/ingenuity-bg-light.svg";
 import { Tenor_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
+import { motion, useAnimation, useInView, useScroll } from "framer-motion";
+import { useEffect, useRef } from "react";
+
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 export const Capabilities = () => {
+  const scrollTopLeftRef = useRef<HTMLDivElement>(null);
+  const scrollTopRightRef = useRef<HTMLDivElement>(null);
+  const scrollBottomLeftRef = useRef<HTMLDivElement>(null);
+  const scrollBottomRightRef = useRef<HTMLDivElement>(null);
+  const topLeftControls = useAnimation();
+  const topRightControls = useAnimation();
+  const bottomLeftControls = useAnimation();
+  const bottomRightControls = useAnimation();
+  const isTopLeftInView = useInView(scrollTopLeftRef);
+  const isBottomLeftInView = useInView(scrollBottomLeftRef, {
+    margin: "0px 0px 70% 0px",
+  });
+  const isTopRightInView = useInView(scrollTopRightRef);
+  const isBottomRightInView = useInView(scrollBottomRightRef);
+
+  const variants = {
+    start: {
+      translateX: "var(--tx-start)",
+      translateY: "var(--ty-start)",
+    },
+    end: {
+      translateX: 0,
+      translateY: 0,
+    },
+  };
+
+  useEffect(() => {
+    if (isTopLeftInView) {
+      topLeftControls.start("end");
+    }
+
+    if (isTopRightInView) {
+      topRightControls.start("end");
+    }
+
+    if (isBottomLeftInView) {
+      bottomLeftControls.start("end");
+    }
+
+    if (isBottomRightInView) {
+      bottomRightControls.start("end");
+    }
+  }, [
+    isBottomLeftInView,
+    isBottomRightInView,
+    isTopLeftInView,
+    isTopRightInView,
+    topLeftControls,
+    topRightControls,
+    bottomLeftControls,
+    bottomRightControls,
+  ]);
+
   return (
-    <section className="grid grid-cols-1 md:grid-cols-[auto,auto] min-h-screen relative">
+    <section className="grid grid-cols-1 md:grid-cols-[auto,auto] min-h-screen relative overflow-hidden">
       <div className="absolute bottom-0 left-0 max-w-2xl hidden lg:block">
         <Image src={bg} alt="Ingenuity decoration" />
       </div>
-      <div className="relative">
+      <div className="relative py-20 md:py-0">
         <div className="flex flex-col gap-8 items-start py-4 px-4 lg:px-12 max-w-prose mx-auto w-fit reltaive md:sticky md:mt-4 top-[calc(1rem+var(--navbar-height))]">
           <h2 className={`${tenor.className} text-2xl lg:text-4xl`}>
             Capabilities
@@ -32,8 +90,15 @@ export const Capabilities = () => {
         </div>
       </div>
 
-      <div className="bg-zinc-200 grid grid-cols-2 xl:gap-4 text-black">
-        <div className="flex flex-col py-4 h-full col-span-2 xl:col-span-1">
+      <div className="bg-zinc-200 grid grid-cols-2 xl:gap-4 text-black overflow-hidden">
+        <motion.div
+          initial="start"
+          animate={topLeftControls}
+          variants={variants}
+          transition={{ duration: 0.75 }}
+          className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 bg-zinc-200 [--tx-start:-100%] [--ty-start:0]"
+          ref={scrollTopLeftRef}
+        >
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Engineering & Technical Services
           </h3>
@@ -44,8 +109,15 @@ export const Capabilities = () => {
             and provide sound engineering design with exceptional quality and
             producibility.
           </p>
-        </div>
-        <div className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 xl:bg-white">
+        </motion.div>
+        <motion.div
+          initial="start"
+          animate={topRightControls}
+          variants={variants}
+          transition={{ duration: 0.75 }}
+          className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 xl:bg-white origin-bottom-left [--tx-start:100%] [--ty-start:0] xl:[--tx-start:0] xl:[--ty-start:-100%]"
+          ref={scrollTopRightRef}
+        >
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Logistics Support
           </h3>
@@ -56,8 +128,15 @@ export const Capabilities = () => {
             support. To provide dynamic, fast, and innovative results, our team
             is adaptable to our customer&apos;s requirements and standards.
           </p>
-        </div>
-        <div className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 xl:bg-white">
+        </motion.div>
+        <motion.div
+          initial="start"
+          animate={bottomLeftControls}
+          variants={variants}
+          transition={{ duration: 0.75 }}
+          className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 xl:bg-white [--tx-start:-100%] [--ty-start:0] xl:[--tx-start:0] xl:[--ty-start:100%]"
+          ref={scrollBottomLeftRef}
+        >
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Information Technology
           </h3>
@@ -72,8 +151,15 @@ export const Capabilities = () => {
             practices to provide an innovative and process-driven approach to
             solve challenging technical and business problems.
           </p>
-        </div>
-        <div className="flex flex-col py-4 h-full col-span-2 xl:col-span-1">
+        </motion.div>
+        <motion.div
+          initial="start"
+          animate={bottomRightControls}
+          variants={variants}
+          transition={{ duration: 0.75 }}
+          className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 [--tx-start:100%] [--ty-start:0]"
+          ref={scrollBottomRightRef}
+        >
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
             Consulting
           </h3>
@@ -86,7 +172,7 @@ export const Capabilities = () => {
             strategies that will display our customers&apos; abilities to meet
             the requirements with a sound solution.
           </p>
-        </div>
+        </motion.div>
         <div className="py-4 border-t-2 border-b-2 border-t-red-700 border-b-red-700 grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:flex 2xl:flex-wrap gap-4 col-span-2 bg-white justify-center items-center font-bold text-lg">
           <span className="font-normal text-sm px-4 col-span-3 lg:col-span-4 xl:col-span-5 2xl:px-8 w-full">
             NAICS Codes:

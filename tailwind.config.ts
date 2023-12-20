@@ -8,11 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        hero: "url(/public/hero.png)",
+      animation: {
+        slideLeft: "slideLeft .7s linear 1.2s forwards",
+        slideLeftDelay: "slideLeft .7s linear 1.5s forwards",
+        slideBorderRight: "slideRight .7s linear 1.2s forwards",
+        slideBorderRightDelay: "slideRight .7s linear 1.5s forwards",
+      },
+      keyframes: {
+        slideLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        slideRight: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
       },
     },
   },
