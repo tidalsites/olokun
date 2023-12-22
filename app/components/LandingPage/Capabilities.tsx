@@ -5,7 +5,7 @@ import { Tenor_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
-import { motion, useAnimation, useInView, useScroll } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
@@ -21,7 +21,7 @@ export const Capabilities = () => {
   const bottomRightControls = useAnimation();
   const isTopLeftInView = useInView(scrollTopLeftRef);
   const isBottomLeftInView = useInView(scrollBottomLeftRef, {
-    margin: "0px 0px 70% 0px",
+    margin: "0px 0px 400px 0px",
   });
   const isTopRightInView = useInView(scrollTopRightRef);
   const isBottomRightInView = useInView(scrollBottomRightRef);
