@@ -37,15 +37,43 @@ export default function Nav() {
         <div className="h-full flex items-center grow">
           <Image src={logo} alt="Olokun LLC" className="h-full w-auto" />
         </div>
-        <div className="hidden md:flex gap-4">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/capabilities">Capabilities</Link>
-          <Link href="/work">Our Work</Link>
-          <Link href="/completecloud" className="hidden lg:block">
+        <div className="hidden md:flex relative isolate">
+          <Link
+            className="px-4 rounded-full relative overflow-hidden after:active:bg-red-700 after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            href="/"
+          >
+            Home
+          </Link>
+          <Link
+            className="px-4 rounded-full relative overflow-hidden after:active:bg-red-700 after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            href="/about"
+          >
+            About
+          </Link>
+          <Link
+            className="px-4 rounded-full relative overflow-hidden after:active:bg-red-700 after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            href="/capabilities"
+          >
+            Capabilities
+          </Link>
+          <Link
+            className="px-4 rounded-full relative overflow-hidden after:active:bg-red-700 after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            href="/work"
+          >
+            Our Work
+          </Link>
+          <Link
+            href="/completecloud"
+            className="hidden lg:block px-4 rounded-full relative overflow-hidden after:active:bg-red-700 after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+          >
             CompleteCloud
           </Link>
-          <Link href="/contact">Contact</Link>
+          <Link
+            className="px-4 rounded-full relative overflow-hidden after:active:bg-red-700 after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            href="/contact"
+          >
+            Contact
+          </Link>
         </div>
       </nav>
       <nav
