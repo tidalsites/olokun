@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import logo from "@/public/logo.svg";
 import Image from "next/image";
@@ -10,10 +10,6 @@ import { PiListBold, PiXBold } from "react-icons/pi";
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const updateMenuState = () => {
-    return setIsMenuOpen((prev) => !prev);
-  };
-
   return (
     <div className="h-[--navbar-height]">
       <nav
@@ -22,7 +18,15 @@ export default function Nav() {
       >
         <button
           onClick={() => {
-            updateMenuState();
+            if (isMenuOpen) {
+              document.body.classList.remove("no-scroll");
+            }
+
+            if (!isMenuOpen) {
+              document.body.classList.add("no-scroll");
+            }
+
+            setIsMenuOpen((prev) => !prev);
           }}
           aria-controls="mobile-nav"
           aria-label="Mobile Menu Toggle"
