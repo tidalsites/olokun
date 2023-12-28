@@ -26,7 +26,7 @@ export const CaseStudies = () => {
           />
         </div>
 
-        <span className="bg-red-700/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
+        <span className="bg-brand/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
           Engineering
         </span>
       </Link>
@@ -43,7 +43,7 @@ export const CaseStudies = () => {
             height="310"
           />
         </div>
-        <span className="bg-red-700/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
+        <span className="bg-brand/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
           Aerospace
         </span>
       </Link>
@@ -60,7 +60,7 @@ export const CaseStudies = () => {
             height="310"
           />
         </div>
-        <span className="bg-red-700/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
+        <span className="bg-brand/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
           Geomatics
         </span>
       </Link>
@@ -77,7 +77,7 @@ export const CaseStudies = () => {
             height="310"
           />
         </div>
-        <span className="bg-red-700/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
+        <span className="bg-brand/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
           CompleteCloud vs. GCC High
         </span>
       </Link>
@@ -94,7 +94,7 @@ export const CaseStudies = () => {
             height="310"
           />
         </div>
-        <span className="bg-red-700/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
+        <span className="bg-brand/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
           Banking Industry
         </span>
       </Link>
@@ -111,7 +111,7 @@ export const CaseStudies = () => {
             height="310"
           />
         </div>
-        <span className="bg-red-700/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
+        <span className="bg-brand/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
           Distribution
         </span>
       </Link>
@@ -128,7 +128,7 @@ export const CaseStudies = () => {
             height="310"
           />
         </div>
-        <span className="bg-red-700/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
+        <span className="bg-brand/90 text-white w-full text-center px-2 py-4 font-semibold absolute bottom-0">
           Educational Institution
         </span>
       </Link>

@@ -37,7 +37,7 @@ export const ContactForm = () => {
             {...register("first_name")}
           />
           {errors && errors["first_name"] && (
-            <span className="text-xs text-red-700 mt-[1px]">
+            <span className="text-xs text-brand mt-[1px]">
               {errors["first_name"].message}
             </span>
           )}
@@ -50,7 +50,7 @@ export const ContactForm = () => {
             {...register("last_name")}
           />
           {errors && errors["last_name"] && (
-            <span className="text-xs text-red-700 mt-[1px]">
+            <span className="text-xs text-brand mt-[1px]">
               {errors["last_name"].message}
             </span>
           )}
@@ -63,7 +63,7 @@ export const ContactForm = () => {
             {...register("email")}
           />
           {errors && errors["email"] && (
-            <span className="text-xs text-red-700 mt-[1px]">
+            <span className="text-xs text-brand mt-[1px]">
               {errors["email"].message}
             </span>
           )}
@@ -76,7 +76,7 @@ export const ContactForm = () => {
             {...register("phone")}
           />
           {errors && errors["phone"] && (
-            <span className="text-xs text-red-700 mt-[1px]">
+            <span className="text-xs text-brand mt-[1px]">
               {errors["phone"].message}
             </span>
           )}
@@ -143,7 +143,7 @@ export const ContactForm = () => {
           placeholder="Describe what you are looking for"
         ></textarea>
         {errors && errors["description"] && (
-          <span className="text-xs text-red-700 mt-[1px]">
+          <span className="text-xs text-brand mt-[1px]">
             {errors["description"].message}
           </span>
         )}

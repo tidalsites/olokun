@@ -20,17 +20,13 @@ export const Vision = () => {
         <div className="absolute left-[50%] top-0 bg-white border-8 border-zinc-200 h-8 w-8 -translate-x-[50%] -translate-y-[calc(50%+4px)] rotate-45"></div>
         <p>Core Values</p>
         <ul className="flex flex-wrap gap-4 md:justify-between items-center h-full">
-          <li className="text-xl py-2 border-b-2 border-b-red-700">
+          <li className="text-xl py-2 border-b-2 border-b-brand">
             Accountable
           </li>
-          <li className="text-xl py-2 border-b-2 border-b-red-700">Ethical</li>
-          <li className="text-xl py-2 border-b-2 border-b-red-700">Flexible</li>
-          <li className="text-xl py-2 border-b-2 border-b-red-700">
-            Integrity
-          </li>
-          <li className="text-xl py-2 border-b-2 border-b-red-700">
-            Innovative
-          </li>
+          <li className="text-xl py-2 border-b-2 border-b-brand">Ethical</li>
+          <li className="text-xl py-2 border-b-2 border-b-brand">Flexible</li>
+          <li className="text-xl py-2 border-b-2 border-b-brand">Integrity</li>
+          <li className="text-xl py-2 border-b-2 border-b-brand">Innovative</li>
         </ul>
       </div>
       <div className="flex flex-col max-w-prose bg-white p-4 col-span-2 md:col-span-1">

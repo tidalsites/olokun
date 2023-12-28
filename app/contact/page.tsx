@@ -91,7 +91,7 @@ export default function Contact() {
           <div className="grid grid-cols-2 col-span-2 lg:col-span-1 gap-4 justify-center mt-auto bg-black text-white w-full p-8 rounded">
             <div className="flex flex-col gap-4 col-span-2 sm:col-span-1">
               <p>Looking for a new uplifting career?</p>
-              <p className="text-3xl w-full md:max-w-[15ch] grow flex items-center bg-white text-black justify-center p-4 border-b-4 border-b-red-700">
+              <p className="text-3xl w-full md:max-w-[15ch] grow flex items-center bg-white text-black justify-center p-4 border-b-4 border-b-brand">
                 Join Our Team & Make a Difference!
               </p>
             </div>

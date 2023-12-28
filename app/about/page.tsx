@@ -132,7 +132,7 @@ export default function About() {
             tempore inventore!
           </p>
           <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0">
-            <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-red-700">
+            <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-brand">
               Government
             </h3>
             <div className="relative isolate">
@@ -156,7 +156,7 @@ export default function About() {
             </div>
           </div>
           <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0">
-            <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-red-700">
+            <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-brand">
               Commercial
             </h3>
             <div className="p-4">

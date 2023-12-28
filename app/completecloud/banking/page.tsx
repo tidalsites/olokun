@@ -22,7 +22,7 @@ export default function Banking() {
               to grow as a company, they needed a change in the technology they
               were using;
             </p>
-            <p className="max-w-prose py-4 text-xl bg-red-700 text-white text-center font-semibold uppercase">
+            <p className="max-w-prose py-4 text-xl bg-brand text-white text-center font-semibold uppercase">
               CompleteCloud was that change.
             </p>
           </section>
@@ -30,7 +30,7 @@ export default function Banking() {
             <h2 className={`${tenor.className} text-4xl text-zinc-800 mt-20`}>
               Solution
             </h2>
-            <p className="max-w-prose leading-6 pt-8 text-xl font-bold border-b-red-700 border-b-2 w-fit pb-2 pr-8">
+            <p className="max-w-prose leading-6 pt-8 text-xl font-bold border-b-brand border-b-2 w-fit pb-2 pr-8">
               Managed Security for Financial Institutions
             </p>
             <p className="max-w-prose leading-6 pt-8">
@@ -46,27 +46,27 @@ export default function Banking() {
               security with:
             </p>
             <ul className="leading-6 pt-8 flex flex-col xl:grid grid-cols-2 gap-4 text-sm">
-              <li className="pl-4 border-l-8 border-l-red-700 bg-white flex items-center py-2">
+              <li className="pl-4 border-l-8 border-l-brand bg-white flex items-center py-2">
                 All of the bank&apos;s data was moved to secure Data Centers in
                 St. Louis, which provides 24x7 security guards, video
                 surveillance, and restricted biometric access
               </li>
-              <li className="pl-4 border-l-8 border-l-red-700 bg-white flex items-center py-2">
+              <li className="pl-4 border-l-8 border-l-brand bg-white flex items-center py-2">
                 Multi-Factor Authentication for mobile users
               </li>
-              <li className="pl-4 border-l-8 border-l-red-700 bg-white flex items-center py-2">
+              <li className="pl-4 border-l-8 border-l-brand bg-white flex items-center py-2">
                 Anti-malware for both server and workstations
               </li>
-              <li className="pl-4 border-l-8 border-l-red-700 bg-white flex items-center py-2">
+              <li className="pl-4 border-l-8 border-l-brand bg-white flex items-center py-2">
                 Active security with host based intrusion detection, periodic
                 internal and external vulnerability scans, and real-time log
                 review and retention for compliance reports
               </li>
-              <li className="pl-4 border-l-8 border-l-red-700 bg-white flex items-center py-2">
+              <li className="pl-4 border-l-8 border-l-brand bg-white flex items-center py-2">
                 DNS filtering for malware and content filtering for general
                 corporate purposes
               </li>
-              <li className="pl-4 border-l-8 border-l-red-700 bg-white flex items-center py-2">
+              <li className="pl-4 border-l-8 border-l-brand bg-white flex items-center py-2">
                 Encrypted email and file sharing
               </li>
             </ul>
@@ -75,12 +75,12 @@ export default function Banking() {
             <h2 className={`${tenor.className} text-4xl text-zinc-800 mt-20`}>
               Results
             </h2>
-            <p className="max-w-prose leading-6 py-8 text-xl font-bold pb-2 pr-8 border-b-2 border-b-red-700 w-fit mb-8">
+            <p className="max-w-prose leading-6 py-8 text-xl font-bold pb-2 pr-8 border-b-2 border-b-brand w-fit mb-8">
               Improving Productivity. Increasing Efficiency.
             </p>
             <div className="flex flex-col gap-4 xl:grid grid-cols-2 mb-20">
               <div className="bg-white p-4 max-w-prose rounded-lg">
-                <p className="pb-2 mb-4 border-b-2 border-b-red-700">
+                <p className="pb-2 mb-4 border-b-2 border-b-brand">
                   Enhanced Compliance Reporting
                 </p>
                 <p className="text-sm leading-6 text-zinc-900">
@@ -94,7 +94,7 @@ export default function Banking() {
                 </p>
               </div>
               <div className="bg-white p-4 max-w-prose rounded-lg">
-                <p className="pb-2 mb-4 border-b-2 border-b-red-700">
+                <p className="pb-2 mb-4 border-b-2 border-b-brand">
                   Revolutionized Disaster Recovery
                 </p>
                 <p className="text-sm leading-6 text-zinc-900">
@@ -108,7 +108,7 @@ export default function Banking() {
                 </p>
               </div>
               <div className="bg-white p-4 max-w-prose rounded-lg">
-                <p className="pb-2 mb-4 border-b-2 border-b-red-700">
+                <p className="pb-2 mb-4 border-b-2 border-b-brand">
                   Ease of Integration with Hardware and Software
                 </p>
                 <p className="text-sm leading-6 text-zinc-900">
@@ -120,7 +120,7 @@ export default function Banking() {
                 </p>
               </div>
               <div className="bg-white p-4 max-w-prose rounded-lg">
-                <p className="pb-2 mb-4 border-b-2 border-b-red-700">
+                <p className="pb-2 mb-4 border-b-2 border-b-brand">
                   Complete and Secure Mobility
                 </p>
                 <p className="text-sm leading-6 text-zinc-900">
@@ -135,7 +135,7 @@ export default function Banking() {
                 </p>
               </div>
               <div className="bg-white p-4 max-w-prose rounded-lg">
-                <p className="pb-2 mb-4 border-b-2 border-b-red-700">
+                <p className="pb-2 mb-4 border-b-2 border-b-brand">
                   24x7 Support and System Transparency
                 </p>
                 <p className="text-sm leading-6 text-zinc-900">
@@ -156,7 +156,7 @@ export default function Banking() {
                 </p>
               </div>
               <div className="bg-white p-4 max-w-prose rounded-lg">
-                <p className="pb-2 mb-4 border-b-2 border-b-red-700">
+                <p className="pb-2 mb-4 border-b-2 border-b-brand">
                   Improved Connectivity
                 </p>
                 <p className="text-sm leading-6 text-zinc-900">

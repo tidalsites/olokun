@@ -95,7 +95,7 @@ export default function Engineering() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 justify-center mb-20 py-8 px-4 border-t-2 border-t-red-700 border-b-2 border-b-red-700">
+            <div className="grid grid-cols-2 gap-8 justify-center mb-20 py-8 px-4 border-t-2 border-t-brand border-b-2 border-b-brand">
               <div className="flex flex-col bg-white rounded p-4 items-center">
                 <span className="font-bold text-center text-2xl">
                   130 Users

@@ -99,7 +99,7 @@ export const Capabilities = () => {
           className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 bg-zinc-200 [--tx-start:-100%] [--ty-start:0]"
           ref={scrollTopLeftRef}
         >
-          <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
+          <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-brand w-fit">
             Engineering & Technical Services
           </h3>
 
@@ -118,7 +118,7 @@ export const Capabilities = () => {
           className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 xl:bg-white origin-bottom-left [--tx-start:100%] [--ty-start:0] xl:[--tx-start:0] xl:[--ty-start:-100%]"
           ref={scrollTopRightRef}
         >
-          <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
+          <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-brand w-fit">
             Logistics Support
           </h3>
           <p className="px-4 max-w-prose leading-8 grow py-4 flex items-center text-lg lg:px-8">
@@ -137,7 +137,7 @@ export const Capabilities = () => {
           className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 xl:bg-white [--tx-start:-100%] [--ty-start:0] xl:[--tx-start:0] xl:[--ty-start:100%]"
           ref={scrollBottomLeftRef}
         >
-          <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
+          <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-brand w-fit">
             Information Technology
           </h3>
           <p className="px-4 max-w-prose leading-8 grow py-4 flex items-center text-lg lg:px-8">
@@ -160,7 +160,7 @@ export const Capabilities = () => {
           className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 [--tx-start:100%] [--ty-start:0]"
           ref={scrollBottomRightRef}
         >
-          <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-red-700 w-fit">
+          <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-brand w-fit">
             Consulting
           </h3>
           <p className="px-4 max-w-prose leading-8 grow py-4 flex items-center text-lg lg:px-8">
@@ -173,7 +173,7 @@ export const Capabilities = () => {
             the requirements with a sound solution.
           </p>
         </motion.div>
-        <div className="py-4 border-t-2 border-b-2 border-t-red-700 border-b-red-700 grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:flex 2xl:flex-wrap gap-4 col-span-2 bg-white justify-center items-center font-bold text-lg">
+        <div className="py-4 border-t-2 border-b-2 border-t-brand border-b-brand grid grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:flex 2xl:flex-wrap gap-4 col-span-2 bg-white justify-center items-center font-bold text-lg">
           <span className="font-normal text-sm px-4 col-span-3 lg:col-span-4 xl:col-span-5 2xl:px-8 w-full">
             NAICS Codes:
           </span>

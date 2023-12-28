@@ -30,19 +30,19 @@ export default function Engineering() {
             clients had before they decided to make the jump to CompleteCloud.
           </p>
           <ul className="flex flex-wrap gap-4">
-            <li className="bg-white p-4 rounded border-b-2 border-b-red-700">
+            <li className="bg-white p-4 rounded border-b-2 border-b-brand">
               5 locations in different states
             </li>
-            <li className="bg-white p-4 rounded border-b-2 border-b-red-700">
+            <li className="bg-white p-4 rounded border-b-2 border-b-brand">
               Over 100 employees
             </li>
-            <li className="bg-white p-4 rounded border-b-2 border-b-red-700">
+            <li className="bg-white p-4 rounded border-b-2 border-b-brand">
               50% are high-end CAD graphics users
             </li>
-            <li className="bg-white p-4 rounded border-b-2 border-b-red-700 max-w-[40ch]">
+            <li className="bg-white p-4 rounded border-b-2 border-b-brand max-w-[40ch]">
               30 TB of data, which resulted in thousand in backup costs annually
             </li>
-            <li className="bg-white p-4 rounded border-b-2 border-b-red-700 max-w-[40ch]">
+            <li className="bg-white p-4 rounded border-b-2 border-b-brand max-w-[40ch]">
               Complex & expensive server infrastructure needing to be refreshed
             </li>
           </ul>

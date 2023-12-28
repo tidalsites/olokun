@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <footer className="flex flex-wrap pt-4 border-t-white border-t-2 gap-8 ">
       <section className="bg-white text-black p-4 pl-12">
-        <p className="text-lg font-semibold border-b-red-700 border-b-2 py-2">
+        <p className="text-lg font-semibold border-b-brand border-b-2 py-2">
           Olokun LLC
         </p>
         <p className="max-w-[30ch] text-sm leading-6 py-2">

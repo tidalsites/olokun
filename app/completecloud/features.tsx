@@ -18,7 +18,7 @@ export const Features = () => {
     <div className="mb-20 grid gap-2 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-8">
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiHardDrivesFill className="text-red-700 text-6xl" />
+          <PiHardDrivesFill className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Servers & Unlimited Storage</span>
@@ -30,7 +30,7 @@ export const Features = () => {
       </div>
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiCloudFill className="text-red-700 text-6xl" />
+          <PiCloudFill className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Cloud Desktops</span>
@@ -43,7 +43,7 @@ export const Features = () => {
       </div>
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiPlugsConnectedBold className="text-red-700 text-6xl" />
+          <PiPlugsConnectedBold className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Connectivity</span>
@@ -55,7 +55,7 @@ export const Features = () => {
       </div>
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiComputerTowerFill className="text-red-700 text-6xl" />
+          <PiComputerTowerFill className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Local Hardware</span>
@@ -68,7 +68,7 @@ export const Features = () => {
       </div>
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiShieldCheckFill className="text-red-700 text-6xl" />
+          <PiShieldCheckFill className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Managed Security</span>
@@ -81,7 +81,7 @@ export const Features = () => {
       </div>
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiCircuitryFill className="text-red-700 text-6xl" />
+          <PiCircuitryFill className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Artificial Intelligence</span>
@@ -94,7 +94,7 @@ export const Features = () => {
       </div>
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiHeadsetFill className="text-red-700 text-6xl" />
+          <PiHeadsetFill className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Support</span>
@@ -105,7 +105,7 @@ export const Features = () => {
       </div>
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiUserSwitchFill className="text-red-700 text-6xl" />
+          <PiUserSwitchFill className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Customer Portal</span>
@@ -118,7 +118,7 @@ export const Features = () => {
       </div>
       <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
-          <PiLineSegmentsFill className="text-red-700 text-6xl" />
+          <PiLineSegmentsFill className="text-brand text-6xl" />
         </span>
         <div className="flex flex-col gap-2">
           <span className="font-semibold">Productivity Suite</span>

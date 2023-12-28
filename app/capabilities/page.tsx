@@ -321,78 +321,78 @@ export default function Capabilities() {
               Ship Modernization, and C5ISR support opportunities for various
               government contractors, but not limited to:
             </p>
-            <div className="py-8 border-t-2 border-t-red-700 grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-20 col-span-2">
+            <div className="py-8 border-t-2 border-t-brand grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-20 col-span-2">
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <MdOutlineManageAccounts className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <MdOutlineManageAccounts className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Proposal Management</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiGraphBold className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiGraphBold className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Proposal Coordination</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiStrategyBold className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiStrategyBold className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Win Strategy Development</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiShieldCheckFill className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiShieldCheckFill className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Compliance Checks</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiListMagnifyingGlass className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiListMagnifyingGlass className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Color Team Reviews</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiPenNibBold className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiPenNibBold className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Written Proposals</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiMicrophoneStageFill className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiMicrophoneStageFill className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Oral Proposals</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiFileBold className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiFileBold className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Capture Plans</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiFileCloudLight className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiFileCloudLight className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Strategic Plans</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiHandshakeFill className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiHandshakeFill className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">Teaming Negotiations</span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiUsersFourFill className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiUsersFourFill className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">
                   Customer & Competitor Profiles
                 </span>
               </div>
               <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-red-700 border-4 w-fit">
-                  <PiFilesBold className="text-3xl lg:text-6xl text-red-700" />
+                <span className="p-2 rounded-full border-brand border-4 w-fit">
+                  <PiFilesBold className="text-3xl lg:text-6xl text-brand" />
                 </span>
                 <span className="text-center">
                   Sources Sought/RFIs Responses

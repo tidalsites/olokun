@@ -51,7 +51,7 @@ export const ContactEmail = ({
                   {engineering ? (
                     <span className="text-green-700 text-xl">&#x1F5F9;</span>
                   ) : (
-                    <span className="text-red-700 text-xl">&#x10102;</span>
+                    <span className="text-brand text-xl">&#x10102;</span>
                   )}
                 </Text>
                 <Text>
@@ -59,7 +59,7 @@ export const ContactEmail = ({
                   {consulting ? (
                     <span className="text-green-700 text-xl">&#x1F5F9;</span>
                   ) : (
-                    <span className="text-red-700 text-xl">&#x10102;</span>
+                    <span className="text-brand text-xl">&#x10102;</span>
                   )}
                 </Text>
                 <Text>
@@ -67,7 +67,7 @@ export const ContactEmail = ({
                   {it ? (
                     <span className="text-green-700 text-xl">&#x1F5F9;</span>
                   ) : (
-                    <span className="text-red-700 text-xl">&#x10102;</span>
+                    <span className="text-brand text-xl">&#x10102;</span>
                   )}
                 </Text>
                 <Text>
@@ -75,7 +75,7 @@ export const ContactEmail = ({
                   {logistics ? (
                     <span className="text-green-700 text-xl">&#x1F5F9;</span>
                   ) : (
-                    <span className="text-red-700 text-xl">&#x10102;</span>
+                    <span className="text-brand text-xl">&#x10102;</span>
                   )}
                 </Text>
               </Column>
