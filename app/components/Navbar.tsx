@@ -7,6 +7,10 @@ import Image from "next/image";
 
 import { PiListBold, PiXBold } from "react-icons/pi";
 
+function removeNoScroll() {
+  document.body.classList.remove("no-scroll");
+}
+
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,7 +23,7 @@ export default function Nav() {
         <button
           onClick={() => {
             if (isMenuOpen) {
-              document.body.classList.remove("no-scroll");
+              removeNoScroll();
             }
 
             if (!isMenuOpen) {
@@ -92,22 +96,58 @@ export default function Nav() {
         aria-label="Mobile Navigation"
       >
         <div className="w-[min(100vw,400px)] flex flex-col gap-4 p-7 bg-zinc-200 text-black h-full">
-          <Link onClick={() => setIsMenuOpen(false)} href="/">
+          <Link
+            onClick={() => {
+              setIsMenuOpen(false);
+              removeNoScroll();
+            }}
+            href="/"
+          >
             Home
           </Link>
-          <Link onClick={() => setIsMenuOpen(false)} href="/about">
+          <Link
+            onClick={() => {
+              setIsMenuOpen(false);
+              removeNoScroll();
+            }}
+            href="/about"
+          >
             About
           </Link>
-          <Link onClick={() => setIsMenuOpen(false)} href="/capabilities">
+          <Link
+            onClick={() => {
+              setIsMenuOpen(false);
+              removeNoScroll();
+            }}
+            href="/capabilities"
+          >
             Capabilities
           </Link>
-          <Link onClick={() => setIsMenuOpen(false)} href="/work">
+          <Link
+            onClick={() => {
+              setIsMenuOpen(false);
+              removeNoScroll();
+            }}
+            href="/work"
+          >
             Our Work
           </Link>
-          <Link onClick={() => setIsMenuOpen(false)} href="/completecloud">
+          <Link
+            onClick={() => {
+              setIsMenuOpen(false);
+              removeNoScroll();
+            }}
+            href="/completecloud"
+          >
             CompleteCloud
           </Link>
-          <Link onClick={() => setIsMenuOpen(false)} href="/contact">
+          <Link
+            onClick={() => {
+              setIsMenuOpen(false);
+              removeNoScroll();
+            }}
+            href="/contact"
+          >
             Contact
           </Link>
         </div>
