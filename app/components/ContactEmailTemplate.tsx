@@ -2,7 +2,6 @@ import { TContactSchema } from "@/schemas/contact";
 import {
   Body,
   Column,
-  Container,
   Head,
   Heading,
   Html,
@@ -12,7 +11,6 @@ import {
   Tailwind,
   Text,
 } from "@react-email/components";
-import { PiCheckCircleBold, PiXCircleBold } from "react-icons/pi";
 
 export const ContactEmail = ({
   first_name,
@@ -36,27 +34,18 @@ export const ContactEmail = ({
           </Section>
           <Section>
             <Row className="flex gap-4 my-8">
-              <Column className="p-4 rounded-lg w-fit border-r-2 border-r-zinc-200">
-                <Text className="text-lg w-fit border-b-2 border-b-red-700">
-                  User Details:
-                </Text>
+              <Column className="p-4 rounded-lg w-fit">
+                <Text className="text-lg w-fit">User Details:</Text>
                 <Text>First Name: {first_name}</Text>
                 <Text>Last Name: {last_name}</Text>
                 <Text>Email: {email}</Text>
                 <Text>Phone Number: {phone}</Text>
               </Column>
-              <Column className="p-4 rounded-lg w-fit">
-                <Text className="text-lg w-fit border-b-2 border-b-red-700">
-                  User Request:
-                </Text>
-                <Text className="max-w-prose">{description}</Text>
-              </Column>
             </Row>
+
             <Row>
-              <Column className="p-4 bg-zinc-200 rounded-lg w-fit">
-                <Text className="text-lg w-fit border-b-2 border-b-red-700">
-                  Services Requested:
-                </Text>
+              <Column className="p-4 rounded-lg w-fit">
+                <Text className="text-lg w-fit">Services Requested:</Text>
                 <Text>
                   Engineering:{" "}
                   {engineering ? (
@@ -89,6 +78,13 @@ export const ContactEmail = ({
                     <span className="text-red-700 text-xl">&#x10102;</span>
                   )}
                 </Text>
+              </Column>
+            </Row>
+
+            <Row>
+              <Column className="p-4 rounded-lg w-fit">
+                <Text className="text-lg w-fit">User Request:</Text>
+                <Text className="max-w-prose">{description}</Text>
               </Column>
             </Row>
           </Section>
