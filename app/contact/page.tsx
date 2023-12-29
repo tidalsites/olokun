@@ -20,7 +20,7 @@ export default function Contact() {
   return (
     <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
-        <h1 className="mb-20">Contact</h1>
+        <h1 className="mb-20">Contact Us</h1>
         <div className="flex flex-col md:grid md:grid-cols-[1fr,auto] lg:grid-cols-2 md:gap-8 gap-20">
           <ContactForm />
           <div className="flex flex-col gap-4 w-fit mx-auto">

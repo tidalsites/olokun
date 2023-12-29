@@ -59,7 +59,7 @@ export default function Nav() {
             About
           </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden after:active:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            className="px-4 rounded-full relative overflow-hidden after:active:bg-brand after:transition-all after:absolute after:-translate-x-[calc(100%+2px)] hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
             href="/capabilities"
           >
             Capabilities

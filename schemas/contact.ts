@@ -14,6 +14,9 @@ export const ContactSchema = z.object({
   consulting: z.boolean().optional(),
   logistics: z.boolean().optional(),
   it: z.boolean().optional(),
+  general: z.boolean().optional(),
+  career: z.boolean().optional(),
+  business_development: z.boolean().optional(),
 });
 
 export type TContactSchema = z.infer<typeof ContactSchema>;

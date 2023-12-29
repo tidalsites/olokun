@@ -132,6 +132,33 @@ export const ContactForm = () => {
               />
               {watch("it") && <PiCheckLight />}
             </label>
+            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded">
+              Business Development
+              <input
+                className="h-0 w-0 absolute opacity-0"
+                type="checkbox"
+                {...register("business_development")}
+              />
+              {watch("business_development") && <PiCheckLight />}
+            </label>
+            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded">
+              Career Opportunity
+              <input
+                className="h-0 w-0 absolute opacity-0"
+                type="checkbox"
+                {...register("career")}
+              />
+              {watch("career") && <PiCheckLight />}
+            </label>
+            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded">
+              General Inquiry
+              <input
+                className="h-0 w-0 absolute opacity-0"
+                type="checkbox"
+                {...register("general")}
+              />
+              {watch("general") && <PiCheckLight />}
+            </label>
           </div>
         </div>
       </div>

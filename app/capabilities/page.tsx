@@ -59,35 +59,35 @@ export default function Capabilities() {
               </p>
               <div className="flex flex-col sm:grid grid-cols-2 gap-4 justify-between py-4 border-t-2 border-zinc-300 w-fit xl:w-full">
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Marine Engineering</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Design Services</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>CAD Modeling</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Electrical & Electronic Engineering</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>HVAC Engineering</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Engineering Studies</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Structural Engineering</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>AIT Installation Support</span>
                 </div>
               </div>
@@ -117,47 +117,47 @@ export default function Capabilities() {
               </p>
               <div className="flex flex-col sm:grid grid-cols-2 gap-4 justify-between py-4 border-t-2 border-zinc-300 w-fit xl:w-full">
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Program/Project Management</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Planning and Estimating</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Commonality Maximization</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Obsolescence Management</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Item Reduction</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Technical Manual Conversions</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Warehousing support</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Alteration Tracking</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Material Ordering</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Scheduling</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Work Packaging</span>
                 </div>
               </div>
@@ -190,31 +190,31 @@ export default function Capabilities() {
               </p>
               <div className="flex flex-col sm:grid grid-cols-2 gap-4 justify-between py-4 border-t-2 border-zinc-300 w-fit xl:w-full">
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Program/Project Management</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Cloud Infrastructure and Virtualization</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Integration and Sustainment</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Information Assurance</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Vulnerability Analysis & Remediation</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Cyber Planning and Analysis</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Security Architecture</span>
                 </div>
               </div>
@@ -245,28 +245,52 @@ export default function Capabilities() {
               </p>
               <div className="flex flex-col sm:grid grid-cols-2 gap-4 justify-between py-4 border-t-2 border-zinc-300 w-fit xl:w-full">
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Business Development Support</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Pipeline Development</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Capture Management</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Proposal Management/Coordination</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Proposal Writing</span>
                 </div>
                 <div className="grid grid-cols-[auto,1fr] gap-2">
-                  <FaCheckCircle className="text-2xl text-green-600" />
+                  <FaCheckCircle className="text-2xl text-brand" />
                   <span>Review & Assessment</span>
+                </div>
+                <div className="grid grid-cols-[auto,1fr] gap-2">
+                  <FaCheckCircle className="text-2xl text-brand" />
+                  <span>Win Strategy Development</span>
+                </div>
+                <div className="grid grid-cols-[auto,1fr] gap-2">
+                  <FaCheckCircle className="text-2xl text-brand" />
+                  <span>Compliance Checks</span>
+                </div>
+                <div className="grid grid-cols-[auto,1fr] gap-2">
+                  <FaCheckCircle className="text-2xl text-brand" />
+                  <span>Color Team Reviews</span>
+                </div>
+                <div className="grid grid-cols-[auto,1fr] gap-2">
+                  <FaCheckCircle className="text-2xl text-brand" />
+                  <span>Oral Proposals</span>
+                </div>
+                <div className="grid grid-cols-[auto,1fr] gap-2">
+                  <FaCheckCircle className="text-2xl text-brand" />
+                  <span>Teaming Negotiations</span>
+                </div>
+                <div className="grid grid-cols-[auto,1fr] gap-2">
+                  <FaCheckCircle className="text-2xl text-brand" />
+                  <span>Sources Sought/RFI Responses</span>
                 </div>
               </div>
             </div>
@@ -311,92 +335,6 @@ export default function Capabilities() {
                     className="max-h-full w-auto"
                   />
                 </div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <p className="max-w-prose leading-6 lg:text-center lg:mx-auto col-span-2 my-8">
-              Olokun&apos;s subject matter experts have backgrounds supporting
-              Alteration Installation Teams (AIT), Engineering, Ship Repair,
-              Ship Modernization, and C5ISR support opportunities for various
-              government contractors, but not limited to:
-            </p>
-            <div className="py-8 border-t-2 border-t-brand grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-20 col-span-2">
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <MdOutlineManageAccounts className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Proposal Management</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiGraphBold className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Proposal Coordination</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiStrategyBold className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Win Strategy Development</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiShieldCheckFill className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Compliance Checks</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiListMagnifyingGlass className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Color Team Reviews</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiPenNibBold className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Written Proposals</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiMicrophoneStageFill className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Oral Proposals</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiFileBold className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Capture Plans</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiFileCloudLight className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Strategic Plans</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiHandshakeFill className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">Teaming Negotiations</span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiUsersFourFill className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">
-                  Customer & Competitor Profiles
-                </span>
-              </div>
-              <div className="flex flex-col gap-2 bg-white rounded p-4 items-center">
-                <span className="p-2 rounded-full border-brand border-4 w-fit">
-                  <PiFilesBold className="text-3xl lg:text-6xl text-brand" />
-                </span>
-                <span className="text-center">
-                  Sources Sought/RFIs Responses
-                </span>
               </div>
             </div>
           </section>

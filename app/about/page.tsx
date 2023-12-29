@@ -7,6 +7,7 @@ const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 import donald from "@/public/Donald-A.-Buzard.jpg";
 import bert from "@/public/Roberto-Bert-Ortiz.jpg";
+import bill from "@/public/Bill-Boudouris.png";
 import vernon from "@/public/vernon-cropped.png";
 
 export default function About() {
@@ -78,7 +79,7 @@ export default function About() {
             </div>
             <div className="border-t-4 lg:border-t-8 pt-10 border-zinc-200 col-span-2 px-4 lg:px-8">
               <p className="pb-8 col-span-2">Meet our Board of Advisors</p>
-              <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
+              <div className="flex flex-col md:grid md:grid-cols-2 xl:grid-cols-3 gap-8">
                 <div className="flex flex-col gap-4 col-span-1">
                   <div className="h-[200px]">
                     <Image
@@ -92,9 +93,39 @@ export default function About() {
                       Roberto &quot;Bert&quot; Ortiz
                     </span>
                     <span className="text-sm text-zinc-200">
-                      Founder/Co-Owner/President/CEO of AVMAC LLC
+                      President and CEO of AVMAC LLC
                     </span>
                   </div>
+
+                  {/* <p>
+                    Roberto “Bert” Ortiz - founder, co-owner and President/CEO
+                    of AVMAC LLC (AVMAC). A senior aviation and shipboard
+                    management professional, Bert retired as a Commander from
+                    the U.S. Navy after a 31-year career and started AVMAC in
+                    2009 with Don Buzard, a shipmate and a 30-year U.S. Navy
+                    retired Commander. Bert has extensive aircraft and shipboard
+                    management, maintenance, acquisition, logistics, operations
+                    and safety experience that both he and Don leveraged to
+                    provide aviation and maritime support services to both the
+                    Government and private industry. Bert has incrementally
+                    grown AVMAC every year into a multimillion-dollar
+                    award-winning company. Nationally, AVMAC has been recognized
+                    as a Inc. Magazine Private Titan in 2020 and has made the
+                    Inc. 5000 list of fastest growing businesses the past two
+                    years with over 500 employees and revenues exceeding $50M.
+                    AVMAC was named the City of Chesapeake Business of the Year
+                    in 2021 and listed as the Inside Business Hampton Roads top
+                    20 Fastest growing business for five years in a row. Bert
+                    leads all aspects of the company&apos;s development and was
+                    named as the Small Business Administration&apos;s Person of
+                    the Year in the Commonwealth of Virginia and the National
+                    second runner-up in 2019. Bert completed his degree in
+                    Business Administration with a specialization in Technology
+                    Management from St. Leo University and has completed his
+                    Defense Acquisition University certifications in Acquisition
+                    and Logistics as well as Production, Quality and
+                    Manufacturing.
+                  </p> */}
                 </div>
                 <div className="flex flex-col gap-4 col-span-1">
                   <div className="h-[200px]">
@@ -112,6 +143,22 @@ export default function About() {
                     <p></p>
                   </div>
                 </div>
+                <div className="flex flex-col gap-4 col-span-1">
+                  <div className="h-[200px]">
+                    <Image
+                      src={bill}
+                      alt="Bill Boudouris"
+                      className="h-full w-auto"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-lg">Bill Boudouris</span>
+                    <span className="text-sm text-zinc-200">
+                      Business Manager
+                    </span>
+                    <p></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -122,15 +169,6 @@ export default function About() {
           >
             Who We Serve
           </h2>
-          <p className="max-w-prose leading-6 py-8 col-span-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste
-            dolor corporis eius doloremque eum error expedita soluta ut,
-            accusantium vero, repellat ea dolorem veniam, est voluptate
-            reiciendis assumenda? Distinctio dolorem alias qui animi ipsum
-            voluptate dignissimos quo, quod vero nihil dolores tempore veniam
-            esse corporis, sit ea molestias. Ut, blanditiis ullam. Quaerat,
-            tempore inventore!
-          </p>
           <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0">
             <h3 className="p-4 bg-zinc-200 text-xl font-light border-b-2 border-b-brand">
               Government
