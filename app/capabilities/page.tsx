@@ -7,10 +7,10 @@ const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 import { Metadata } from "next";
 
 import completecloud from "@/public/completecloudlogo.png";
-import engineering from "@/public/capabilities/engineering.png";
-import logistics from "@/public/capabilities/logistics.png";
-import it from "@/public/capabilities/it.png";
-import consulting from "@/public/capabilities/consulting.png";
+import engineering from "@/public/capabilities/engineering.webp";
+import logistics from "@/public/capabilities/logistics.webp";
+import it from "@/public/capabilities/it.webp";
+import consulting from "@/public/capabilities/consulting.webp";
 
 export const metadata: Metadata = {
   title: "Our Comprehensive Capabilities - Olokun LLC Government Solutions",

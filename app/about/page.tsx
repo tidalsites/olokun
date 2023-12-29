@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 import donald from "@/public/Donald-A.-Buzard.jpg";
 import bert from "@/public/Roberto-Bert-Ortiz.jpg";
 import bill from "@/public/Bill-Boudouris.png";
-import vernon from "@/public/vernon-cropped.png";
+import vernon from "@/public/vernon.webp";
 
 export default function About() {
   return (

@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-import engineering from "@/public/casestudies/engineering.png";
-import aerospace from "@/public/casestudies/aerospace.png";
-import geomatics from "@/public/casestudies/geomatics.png";
-import dod from "@/public/casestudies/dod.png";
-import banking from "@/public/casestudies/banking.png";
-import distribution from "@/public/casestudies/distribution.png";
-import education from "@/public/casestudies/education.png";
+import engineering from "@/public/casestudies/engineering.webp";
+import aerospace from "@/public/casestudies/aerospace.webp";
+import geomatics from "@/public/casestudies/geomatics.webp";
+import dod from "@/public/casestudies/dod.webp";
+import banking from "@/public/casestudies/banking.webp";
+import distribution from "@/public/casestudies/distribution.webp";
+import education from "@/public/casestudies/education.webp";
 import Link from "next/link";
 
 export const CaseStudies = () => {

@@ -2,7 +2,7 @@ import { Tenor_Sans } from "next/font/google";
 
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
-import avatara from "@/public/casestudies/avatara.png";
+import avatara from "@/public/casestudies/avatara.webp";
 
 import { Features } from "./features";
 import { CaseStudies } from "./casestudies";
@@ -31,7 +31,7 @@ export default function CompleteCloud() {
             customers a competitive advantage and peace of mind.
           </p>
           <div className="mt-4 outline -outline-offset-8 outline-2 outline-brand w-fit">
-            <Image src={avatara} alt="avatara dashboard" />
+            <Image src={avatara} alt="avatara dashboard" priority />
           </div>
           <p className="max-w-prose leading-6 py-8 mt-4">
             The CompleteCloud Platform offers a revolutionized approach to

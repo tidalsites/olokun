@@ -66,7 +66,7 @@ export const Capabilities = () => {
 
   return (
     <section className="grid grid-cols-1 md:grid-cols-[auto,auto] min-h-screen relative overflow-hidden">
-      <div className="absolute bottom-0 left-0 max-w-2xl hidden lg:block">
+      <div className="absolute bottom-0 left-0 max-w-2xl hidden md:block">
         <Image src={bg} alt="Ingenuity decoration" />
       </div>
       <div className="relative py-20 md:py-0">

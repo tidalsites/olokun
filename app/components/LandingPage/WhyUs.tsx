@@ -2,7 +2,7 @@ import { Tenor_Sans } from "next/font/google";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import bg from "@/public/ingenuity-bg-light.svg";
-import graphic from "@/public/why-us.png";
+import graphic from "@/public/why-us.webp";
 import Link from "next/link";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 

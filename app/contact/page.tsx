@@ -8,7 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-import jobsearch from "@/public/jobsearch.png";
+import jobsearch from "@/public/jobsearch.webp";
 import Image from "next/image";
 
 import { Map } from "../components/GoogleMap";
@@ -105,6 +105,7 @@ export default function Contact() {
                 src={jobsearch}
                 alt="Join Us"
                 className="h-full w-auto bg-cover"
+                priority
               />
             </div>
             <Link
