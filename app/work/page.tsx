@@ -1,5 +1,12 @@
+import { Metadata } from "next";
 import { Tenor_Sans } from "next/font/google";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Our Achievements - Olokun LLC Success Stories",
+  description:
+    "Explore our portfolio of inspiring testimonials and in-depth case studies, highlighting Olokun LLC's successful projects and satisfied clients. Discover how our consulting, engineering, IT, and logistics solutions have consistently delivered exceptional results for local, state, and federal government organizations, military, private industry, and public entities.",
+};
 
 export default function Work() {
   return (

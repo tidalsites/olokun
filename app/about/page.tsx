@@ -4,6 +4,13 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { Vision } from "./Vision";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Olokun - Your Trusted Partner in Government Solutions",
+  description:
+    "Learn about Olokun LLC, an SBA Certified Minority-Owned Business Enterprise (MBE) based in Norfolk, Virginia. Discover how we provide consulting, engineering, IT, and logistics solutions to government organizations, military, private industry, and more. Explore our commitment to excellence and expertise in maritime modernization, engineering, capture management, and customer-centric solutions since our founding in June 2021.",
+};
 
 import donald from "@/public/Donald-A.-Buzard.jpg";
 import bert from "@/public/Roberto-Bert-Ortiz.jpg";

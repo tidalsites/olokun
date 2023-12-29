@@ -1,3 +1,5 @@
+"use client";
+
 import { useLoadScript, GoogleMap, Marker } from "@react-google-maps/api";
 import { PiSpinner } from "react-icons/pi";
 

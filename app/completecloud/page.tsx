@@ -7,6 +7,13 @@ import avatara from "@/public/casestudies/avatara.png";
 import { Features } from "./features";
 import { CaseStudies } from "./casestudies";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "CompleteCloud: The Smart Platform for Security and Productivity",
+  description:
+    "Discover CompleteCloud, our smart platform designed for security and productivity-conscious businesses. Explore case studies showcasing how CompleteCloud has empowered clients, providing an all-inclusive per user per month pricing model for a competitive advantage and peace of mind.",
+};
 
 export default function CompleteCloud() {
   return (

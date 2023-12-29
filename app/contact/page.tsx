@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import {
   FaEnvelope,
@@ -15,6 +13,13 @@ import Image from "next/image";
 
 import { Map } from "../components/GoogleMap";
 import { ContactForm } from "./form";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Get in Touch with Olokun LLC - Contact Information",
+  description:
+    "Contact Olokun LLC for inquiries, partnership opportunities, or any questions you may have. We look forward to hearing from you and assisting with your government solutions needs.",
+};
 
 export default function Contact() {
   return (

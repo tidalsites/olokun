@@ -4,24 +4,19 @@ import Link from "next/link";
 import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
+import { Metadata } from "next";
+
 import completecloud from "@/public/completecloudlogo.png";
 import engineering from "@/public/capabilities/engineering.png";
 import logistics from "@/public/capabilities/logistics.png";
 import it from "@/public/capabilities/it.png";
 import consulting from "@/public/capabilities/consulting.png";
 
-import { MdOutlineManageAccounts } from "react-icons/md";
-import { PiGraphBold } from "react-icons/pi";
-import { PiStrategyBold } from "react-icons/pi";
-import { PiShieldCheckFill } from "react-icons/pi";
-import { PiListMagnifyingGlass } from "react-icons/pi";
-import { PiPenNibBold } from "react-icons/pi";
-import { PiMicrophoneStageFill } from "react-icons/pi";
-import { PiFileBold } from "react-icons/pi";
-import { PiFileCloudLight } from "react-icons/pi";
-import { PiHandshakeFill } from "react-icons/pi";
-import { PiUsersFourFill } from "react-icons/pi";
-import { PiFilesBold } from "react-icons/pi";
+export const metadata: Metadata = {
+  title: "Our Comprehensive Capabilities - Olokun LLC Government Solutions",
+  description:
+    "Explore Olokun LLC's wide-ranging capabilities, including consulting, engineering, information technology, and logistics solutions for local, state, and federal government organizations, military, private industry, and public entities. Discover how our expertise in maritime modernization, engineering, and customer-centric solutions sets us apart in the industry.",
+};
 
 export default function Capabilities() {
   return (
