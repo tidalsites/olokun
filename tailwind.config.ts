@@ -27,6 +27,9 @@ const config: Config = {
       colors: {
         brand: "#bf0000",
       },
+      gridTemplateColumns: {
+        auto: "repeat(auto-fit, minmax(250px, 1fr))",
+      },
     },
   },
   darkMode: "class",
