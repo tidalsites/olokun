@@ -9,10 +9,10 @@ const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 export const WhyUs = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-[auto,auto] min-h-screen relative pb-20 overflow-x-hidden">
-      <div className="items-center justify-center hidden md:flex mt-20 px-8 max-h-[600px]">
+      <div className="items-center justify-center hidden lg:flex mt-20 px-8 max-h-[600px]">
         <Image src={graphic} alt="Decorative" className="max-h-full w-auto" />
       </div>
-      <div className="flex flex-col gap-8 items-start pt-[15vh] py-10 px-4 lg:px-12 max-w-prose mx-auto">
+      <div className="flex flex-col gap-8 items-start pt-[15vh] py-10 px-4 max-w-prose mx-auto">
         <div className="absolute top-0 left-0 max-w-2xl scale-y-[-1]">
           <Image src={bg} alt="Ingenuity decoration" />
         </div>
@@ -26,11 +26,30 @@ export const WhyUs = () => {
           Olokun is disciplined by process and adaptive to customer needs.
         </p>
         <p className="max-w-prose leading-8">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-          soluta est doloribus ducimus quo! Doloribus amet voluptatibus
-          temporibus eaque illum quam maiores culpa quia, nihil non accusamus ut
-          eos repellat in corrupti.
+          Olokun&apos;s subject matter experts have backgrounds supporting
+          design, engineering, installation, maintenance, and modernization
+          support for DOD customers including, but not limited to:
         </p>
+        <ul className="grid grid-cols-auto xl:grid-cols-3 sm:gap-2 w-full">
+          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+            Engineering &amp; Design Services and Management
+          </li>
+          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+            Federal Defense Major Program and Project Management
+          </li>
+          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+            Financial Management
+          </li>
+          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+            Information Technology Services
+          </li>
+          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+            Logistic Services
+          </li>
+          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+            Waterfront Industrial Services
+          </li>
+        </ul>
         <Link
           href="/about"
           className="px-4 py-1 rounded bg-white text-black flex gap-4 items-center justify-start group"
