@@ -79,7 +79,7 @@ export default function Contact() {
                 <FaFacebook />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/olokun-llc/"
                 className="text-xl grid place-content-center rounded-full bg-white p-2 hover:bg-black hover:text-white transition-all"
                 aria-label="Linkedin"
               >
@@ -110,7 +110,7 @@ export default function Contact() {
               />
             </div>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/olokun-llc/"
               className="bg-white border-2 border-white text-black text-center text-lg w-full flex items-center col-span-2 group"
             >
               <span className="grow group-hover:translate-x-2 transition-all">

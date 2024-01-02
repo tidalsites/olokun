@@ -22,6 +22,9 @@ export const ContactEmail = ({
   consulting,
   it,
   logistics,
+  business_development,
+  career,
+  general,
 }: TContactSchema) => {
   return (
     <Html>
@@ -73,6 +76,30 @@ export const ContactEmail = ({
                 <Text>
                   Logistics:{" "}
                   {logistics ? (
+                    <span className="text-green-700 text-xl">&#x1F5F9;</span>
+                  ) : (
+                    <span className="text-brand text-xl">&#x10102;</span>
+                  )}
+                </Text>
+                <Text>
+                  Business Development:{" "}
+                  {business_development ? (
+                    <span className="text-green-700 text-xl">&#x1F5F9;</span>
+                  ) : (
+                    <span className="text-brand text-xl">&#x10102;</span>
+                  )}
+                </Text>
+                <Text>
+                  Career Opportunity:{" "}
+                  {career ? (
+                    <span className="text-green-700 text-xl">&#x1F5F9;</span>
+                  ) : (
+                    <span className="text-brand text-xl">&#x10102;</span>
+                  )}
+                </Text>
+                <Text>
+                  General:{" "}
+                  {general ? (
                     <span className="text-green-700 text-xl">&#x1F5F9;</span>
                   ) : (
                     <span className="text-brand text-xl">&#x10102;</span>

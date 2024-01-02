@@ -114,7 +114,7 @@ export const Footer = () => {
               <FaFacebook />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/olokun-llc/"
               className="text-lg grid place-content-center rounded-full bg-white/10 p-2 transition-all hover:bg-white hover:text-black"
               aria-label="Linkedin"
             >
@@ -131,8 +131,14 @@ export const Footer = () => {
         </section>
       </div>
 
-      <div className="text-sm py-2 border-t-[1px] border-t-white text-center w-full">
-        &copy; 2023 Olokun LLC. All Rights Reserved
+      <div className="text-sm py-2 border-t-[1px] border-t-white w-full flex justify-between px-4">
+        <span>&copy; 2024 Olokun LLC. All Rights Reserved</span>
+        <span>
+          Designed by{" "}
+          <Link target="_blank" href="https://tidalsites.com">
+            Tidal Sites
+          </Link>
+        </span>
       </div>
     </footer>
   );
