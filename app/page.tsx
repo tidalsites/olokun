@@ -1,6 +1,7 @@
 import { Capabilities } from "./components/LandingPage/Capabilities";
 import { ContactUs } from "./components/LandingPage/ContactUs";
 import { Hero } from "./components/LandingPage/Hero";
+import { Teammates } from "./components/LandingPage/Teammates";
 import { WhyUs } from "./components/LandingPage/WhyUs";
 import type { Metadata } from "next";
 
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <main className="min-h-screen grid place-content-center">
       <Hero />
+      <Teammates />
       <Capabilities />
       <WhyUs />
       <ContactUs />
