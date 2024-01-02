@@ -225,13 +225,13 @@ export default function About() {
             </div>
           </div>
           <Link
+            className="bg-black text-white border-2 border-black rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit"
             href="/capabilities"
-            className="px-4 py-1 bg-black text-white rounded w-fit flex items-center gap-2 group mx-auto col-span-2 my-8 transition-all "
           >
             <div className="flex p-2 rounded-full bg-white text-black items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
               <FaArrowRight />
             </div>
-            <span>Check out our Capabilities</span>
+            <span>View All Capabilities</span>
           </Link>
         </div>
         <div className="mt-20">

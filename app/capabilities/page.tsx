@@ -313,10 +313,10 @@ export default function Capabilities() {
                   voluptatem?
                 </p>
                 <Link
+                  className="bg-black text-white border-2 border-black rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit mt-8"
                   href="/completecloud"
-                  className="bg-black text-white px-4 py-1 flex gap-2 items-center w-fit my-4 rounded"
                 >
-                  <div className="rounded-full p-2 flex items-center bg-white text-black">
+                  <div className="flex p-2 rounded-full bg-white text-black items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
                     <FaArrowRight />
                   </div>
                   <span>Discover CompleteCloud</span>

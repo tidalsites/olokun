@@ -43,12 +43,14 @@ export default function Nav() {
         </button>
 
         <div className="h-full flex items-center grow">
-          <Image
-            src={logo}
-            alt="Olokun LLC"
-            className="h-full w-auto"
-            priority
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Olokun LLC"
+              className="h-full w-auto"
+              priority
+            />
+          </Link>
         </div>
         <div className="hidden md:flex relative isolate">
           <Link

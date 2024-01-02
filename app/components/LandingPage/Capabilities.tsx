@@ -7,6 +7,7 @@ import Link from "next/link";
 
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { FaArrowRight } from "react-icons/fa";
 
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
@@ -82,10 +83,13 @@ export const Capabilities = () => {
             logistics, and information technology.
           </p>
           <Link
+            className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group"
             href="/capabilities"
-            className="px-4 py-1 rounded bg-white text-black"
           >
-            View All Capabilities
+            <div className="flex p-2 rounded-full bg-black text-white items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
+              <FaArrowRight />
+            </div>
+            <span className="bg-white">View All Capabilities</span>
           </Link>
         </div>
       </div>

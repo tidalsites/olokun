@@ -51,15 +51,13 @@ export const WhyUs = () => {
           </li>
         </ul>
         <Link
+          className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group"
           href="/about"
-          className="px-4 py-1 rounded bg-white text-black flex gap-4 items-center justify-start group"
         >
-          <span className="font-semibold bg-white z-20 h-full flex items-center rounded-full px-4">
-            Learn more about us
-          </span>
-          <div className="flex justify-center items-center p-2 rounded-full bg-black text-white -translate-x-[calc(100%+1rem+1px)] transition-all z-10 group-hover:translate-x-0 group-hover:justify-end group-hover:pl-6">
+          <div className="flex p-2 rounded-full bg-black text-white items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
             <FaArrowRight />
           </div>
+          <span className="bg-white">Learn More About Us</span>
         </Link>
       </div>
     </section>

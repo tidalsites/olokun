@@ -179,17 +179,17 @@ export const ContactForm = () => {
       <button
         disabled={isSubmitting}
         className={`${
-          isSubmitting ? "bg-neutral-700" : "bg-black "
-        }rounded px-4 py-1 mt-8 w-fit text-white flex gap-2 items-center group hover:bg-green-700"`}
+          isSubmitting ? "bg-neutral-700" : "bg-black"
+        } rounded px-4 py-1 mt-8 w-fit text-white flex gap-2 items-center group`}
       >
-        <span className="text-lg group-hover:pl-2 transition-all">Submit</span>
-        <div className="rounded-full bg-white p-2 grid place-content-center text-black transition-all">
+        <div className="rounded-full bg-white p-2 grid place-content-center text-black group-hover:pl-6 transition-all">
           {isSubmitting ? (
-            <PiSpinner className="animate-spin text-2xl" />
+            <PiSpinner className="animate-spin text-2xl text-neutral-900" />
           ) : (
             <RiMailSendLine className="text-2xl" />
           )}
         </div>
+        <span>Submit</span>
       </button>
     </form>
   );

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {
+  FaArrowRight,
   FaEnvelope,
   FaFacebook,
   FaLinkedin,
@@ -58,35 +59,35 @@ export default function Contact() {
             <div className="flex flex-wrap justify-center gap-2">
               <Link
                 href="tel:+17578445522"
-                className="text-xl grid place-content-center rounded-full bg-white p-2"
+                className="text-xl grid place-content-center rounded-full bg-white p-2 hover:bg-black hover:text-white transition-all"
                 aria-label="Phone"
               >
                 <FaPhone />
               </Link>
               <Link
                 href="/contact"
-                className="text-xl grid place-content-center rounded-full bg-white p-2"
+                className="text-xl grid place-content-center rounded-full bg-white p-2 hover:bg-black hover:text-white transition-all"
                 aria-label="Email"
               >
                 <FaEnvelope />
               </Link>
               <Link
                 href="https://facebook.com"
-                className="text-xl grid place-content-center rounded-full bg-white p-2"
+                className="text-xl grid place-content-center rounded-full bg-white p-2 hover:bg-black hover:text-white transition-all"
                 aria-label="Facebook"
               >
                 <FaFacebook />
               </Link>
               <Link
                 href="https://linkedin.com"
-                className="text-xl grid place-content-center rounded-full bg-white p-2"
+                className="text-xl grid place-content-center rounded-full bg-white p-2 hover:bg-black hover:text-white transition-all"
                 aria-label="Linkedin"
               >
                 <FaLinkedin />
               </Link>
               <Link
                 href="https://twitter.com"
-                className="text-xl grid place-content-center rounded-full bg-white p-2"
+                className="text-xl grid place-content-center rounded-full bg-white p-2 hover:bg-black hover:text-white transition-all"
                 aria-label="Twitter"
               >
                 <FaTwitter />
@@ -110,9 +111,14 @@ export default function Contact() {
             </div>
             <Link
               href="https://linkedin.com"
-              className="bg-white px-4 py-1 text-black text-center col-span-2 text-lg mt-4"
+              className="bg-white border-2 border-white text-black text-center text-lg w-full flex items-center col-span-2 group"
             >
-              Apply Today
+              <span className="grow group-hover:translate-x-2 transition-all">
+                Apply Today
+              </span>
+              <div className="flex p-2 bg-brand text-white items-center justify-center rounded group-hover:pl-6 transition-all">
+                <FaArrowRight />
+              </div>
             </Link>
           </div>
           <div className="my-8 col-span-2">

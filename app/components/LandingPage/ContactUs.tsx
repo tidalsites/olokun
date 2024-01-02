@@ -14,15 +14,13 @@ export const ContactUs = () => {
           Get Started Today!
         </h2>
         <Link
+          className="bg-white text-neutral-900 border-2 rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit border-px border-brand"
           href="/contact"
-          className="p-2 rounded max-h-[50px] w-fit flex gap-4 group items-center bg-white text-black border-2 border-brand"
         >
-          <div className="bg-brand rounded-full text-white p-2 group-hover:pl-3 transition-all flex items-center">
-            <FaArrowRight className="text-2xl" />
+          <div className="flex p-2 rounded-full bg-brand text-white items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
+            <FaArrowRight />
           </div>
-          <span className="text-lg font-semibold group-hover:pr-2 transition-all">
-            Contact Us
-          </span>
+          <span className="bg-white">Contact Us</span>
         </Link>
       </div>
       <div className="bg-black hidden lg:block bg-[url(/contact-graphic.webp)] bg-cover overflow-hidden relative after:absolute after:h-full after:aspect-square after:-rotate-45 after:-bottom-4 after:origin-bottom-left after:bg-zinc-200 after:border-double after:border-[12px] after:border-brand after:outline after:outline-4 after:outline-white"></div>
