@@ -1,0 +1,92 @@
+{
+  "capabilities": [
+    {
+      "heading": "Engineering & Technical Services",
+      "text": "Engineering is one of Olokun's core competencies. Our engineers, designers, and drafters are experts in Hull, Mechanical, and Electrical (HM&E) systems and equipment. Our professional artisans are skilled in integrating systems and equipment in Command, Control, Communications, Computers, Combat Systems, Intelligence, Surveillance, and Reconnaissance (C5ISR) integration areas. Through cradle-to-grave engineering processes, our artisan performs tasks in concept development, advanced planning, ship checks, design, installation and testing areas. Olokun provides experienced and knowledgeable Program Management Support throughout the lifecycle of design and engineering projects, programs, and contracts. Olokun's artisan and Program Management have experience in NAVFAC, NAVSEA, ABS, MSC, and USCG Regulations.",
+      "services": [
+        "Naval Architecture",
+        "Structural Engineering",
+        "Mechanical Engineering",
+        "Marine Engineering",
+        "Electrical/Electronic Engineering",
+        "CAD Modeling (2-D or 3-D)",
+        "Engineering Calculations, Studies, and Analysis",
+        "System Design",
+        "Finite Element Analysis (FEA)",
+        "Life Cycle Analysis",
+        "Ship Installation Drawings (SIDS)",
+        "On-Site Representation (OSR) Support",
+        "Conceptual and Detail Design Drawings and Diagrams",
+        "Work Specification Development",
+        "Model Based Systems Engineering",
+        "Systems of Systems Engineering",
+        "AIT Installation Support"
+      ],
+      "image": "engineering",
+      "alt": "U.S. Navy Ship"
+    },
+    {
+      "heading": "Logistics Support",
+      "text": "At Olokun LLC, our logistics team can provide a wide range of services to support customers' requirements. We provide integrated logistics support services in the acquisition, planning, and life cycle support. To provide dynamic, fast, and innovative results, our team is adaptable to our customer's requirements and standards.",
+      "services": [
+        "Program/Project Management",
+        "Planning and Estimating",
+        "Commonality Maximization",
+        "Obsolescence Management",
+        "Item Reduction",
+        "Technical Manual Conversions",
+        "Warehousing support",
+        "Alteration Tracking",
+        "Material Ordering",
+        "Scheduling",
+        "Work Packaging"
+      ],
+      "image": "logistics",
+      "alt": "Pen and keyboard"
+    },
+    {
+      "heading": "Information Technology",
+      "text": "Our Information Technology Industry Professionals provide information technology development, operations and sustainment services, and cyber security services for the various federal government and commercial customers. Olokun IT professionals design, develop, integrate, test, deploy, and maintain secure software applications and web services hosted in various government and commercial virtual environments. Using technology, Olokun provides digital transformation to change business processes, often leveraging cloud computing, data analytics, and automation. By leveraging technology to enhance interactions and experiences for customers, Olokun uses industry best practices to provide innovative, process-driven approaches to solve technical and business challenges.",
+      "services": [
+        "Program/Project Management",
+        "Integration and Sustainment",
+        "Vulnerability Analysis & Remediation",
+        "Security Architecture",
+        "Cloud Infrastructure and Virtualization",
+        "Information Assurance",
+        "Cyber Planning and Analysis",
+        "Help Desk Support",
+        "Network Support",
+        "Hardware Support",
+        "Software Support",
+        "Security Support",
+        "Data Backup and Recovery",
+        "Mobile Device Support",
+        "Cloud Services Support",
+        "CMMC solutions",
+        "Governance consulting"
+      ],
+      "image": "it",
+      "alt": "Digital cloud"
+    },
+    {
+      "heading": "Consulting",
+      "text": "Olokun has years of experience in business development support, pipeline development, proposal management, coordination, writing, review, and assessment. Our team develops detailed outlines, technical content, compliance matrix, and capture plans. We have experts in government contracting who can provide competitive bid strategies that will display our customers' abilities to meet the requirements with a sound solution.",
+      "services": [
+        "Business Development Support",
+        "Pipeline Development",
+        "Capture Management",
+        "Proposal Management/Coordination",
+        "Proposal Writing",
+        "Review & Assessment",
+        "Win Strategy Development",
+        "Color Team Reviews",
+        "Oral Proposals",
+        "Teaming Negotiations",
+        "Sources Sought/RFI Responses"
+      ],
+      "image": "consulting",
+      "alt": "People at business meeting"
+    }
+  ]
+}
