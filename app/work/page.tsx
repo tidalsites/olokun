@@ -30,7 +30,7 @@ export default function Work() {
           </p>
         </section>
       </div>
-      <section className="flex flex-wrap lg:grid lg:grid-cols-2 gap-4 mb-20 mx-auto">
+      <section className="flex flex-wrap lg:grid lg:grid-cols-2 gap-10 mb-20 mx-auto">
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose row-span-2">
           <span className="text-sm text-zinc-600">N00189-22-D-0010</span>
           <span className="font-bold text-xl mt-4">

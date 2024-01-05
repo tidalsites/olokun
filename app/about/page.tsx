@@ -2,13 +2,9 @@ import { Metadata } from "next";
 import { Tenor_Sans } from "next/font/google";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-import { Vision } from "./Vision";
 import { Team } from "./Team";
-import Image from "next/image";
+import { Vision } from "./Vision";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
-
-import commercial from "@/public/handshake-right.png";
-import gov from "@/public/gov.png";
 
 export const metadata: Metadata = {
   title: "About Olokun - Your Trusted Partner in Government Solutions",
@@ -25,28 +21,32 @@ export default function About() {
           <h2 className={`${tenor.className} text-4xl text-zinc-800`}>
             Who We Are?
           </h2>
-          <p className="max-w-prose leading-6 py-8">
-            Olokun LLC is an SBA Certified Minority-Owned Business Enterprise
-            (MBE) located in Norfolk, Virginia. We provide consulting,
-            engineering, information technology, and logistics solutions for
-            local, state, and federal government organizations, military,
-            private industry, and public entities.
-          </p>
-          <p className="max-w-prose leading-6 py-4">
-            Olokun, LLC (UEID: M7JSB8E7KB73, Cage Code: 95V71) is registered in
-            the System of Award Management (SAM) under primary NAICS 541330 for
-            Engineering Services and various secondary NAICS codes associated
-            with Consulting, Management, Professional, and Technical services.
-          </p>
-          <p className="max-w-prose leading-6 py-4">
-            Since our founding on June 10, 2021, Olokun is uniquely situated to
-            leverage our management expertise and professional talents related
-            to Maritime Industry Modernization, Engineering, Capture Management,
-            Strategic Teaming, and Life-Cycle Logistics to provide a quality,
-            cost effective solution to our customers. Based on the past two (2)
-            years of customer feedback, Olokun is disciplined by process and
-            adaptive to customer needs.
-          </p>
+          <div className="grid xl:grid-cols-2 xl:gap-x-8">
+            <p className="max-w-prose leading-6 pt-8 py-4">
+              Olokun LLC is an SBA Certified Minority-Owned Business Enterprise
+              (MBE) located in Norfolk, Virginia. We provide consulting,
+              engineering, information technology, and logistics solutions for
+              local, state, and federal government organizations, military,
+              private industry, and public entities.
+            </p>
+            <p className="max-w-prose leading-6 py-4 bg-white p-4 row-span-2 xl:text-center flex items-center -mx-4 xl:rounded-lg xl:font-semibold xl:px-12 xl:outline outline-4 -outline-offset-8 outline-brand">
+              Olokun, LLC (UEID: M7JSB8E7KB73, Cage Code: 95V71) is registered
+              in the System of Award Management (SAM) under primary NAICS 541330
+              for Engineering Services and various secondary NAICS codes
+              associated with Consulting, Management, Professional, and
+              Technical services.
+            </p>
+            <p className="max-w-prose leading-6 py-4">
+              Since our founding on June 10, 2021, Olokun is uniquely situated
+              to leverage our management expertise and professional talents
+              related to Maritime Industry Modernization, Engineering, Capture
+              Management, Strategic Teaming, and Life-Cycle Logistics to provide
+              a quality, cost effective solution to our customers. Based on the
+              past two (2) years of customer feedback, Olokun is disciplined by
+              process and adaptive to customer needs.
+            </p>
+          </div>
+
           <Team />
         </div>
         <div className="mt-20 grid grid-cols-2 gap-8">
@@ -56,10 +56,11 @@ export default function About() {
             Who We Serve
           </h2>
           <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0">
-            <h3 className="p-4 md:px-0 bg-zinc-200 text-xl font-light">
+            <div className="bg-black/30 bg-blend-multiply bg-[url(/gov.png)] h-[250px] bg-cover"></div>
+            <h3 className="p-4 text-xl font-semibold border-b-2 border-b-brand">
               Government
             </h3>
-            <p className="grow max-w-prose leading-7 py-8 p-4">
+            <p className="grow max-w-prose leading-7 p-4">
               As a small business, Olokun provides subject matter expertise,
               specializing in marine engineering, design, information
               technology, logistics, planning &amp; maintenance, planning &amp;
@@ -71,10 +72,12 @@ export default function About() {
             </p>
           </div>
           <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0 flex flex-col">
-            <h3 className="p-4 md:px-0 bg-zinc-200 text-xl font-light">
+            <div className="bg-black/30 bg-blend-multiply bg-[url(/commercial.png)] h-[250px] bg-cover"></div>
+
+            <h3 className="p-4 text-xl font-semibold border-b-2 border-b-brand">
               Commercial
             </h3>
-            <p className="grow max-w-prose leading-7 py-8 p-4">
+            <p className="grow max-w-prose leading-7 p-4">
               With subject matter experts in government and commercial business,
               Olokun&apos;s services provide small and large businesses flexible
               solutions to align people, processes, assets, and technology to
