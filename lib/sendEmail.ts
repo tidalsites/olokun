@@ -30,13 +30,12 @@ export const sendContactEmail = async (
       from: "onboarding@resend.dev",
       to: "devin@tidalsites.com",
       subject: "Olokun Contact form",
-      // text: "test",
       react: createElement(ContactEmail, formData),
     });
 
     return { success: true, data: resp };
   } catch (error) {
-    let returnedError;
+    let returnedError = "Unknown error occurred";
 
     if (error instanceof Error) {
       returnedError = error.message;
@@ -46,7 +45,9 @@ export const sendContactEmail = async (
       returnedError = error.join(",");
     }
 
-    returnedError = String(error);
+    if (typeof error === "string") {
+      returnedError = error;
+    }
     return { success: false, error: returnedError };
   }
 };

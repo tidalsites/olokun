@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { TContactSchema, ContactSchema } from "@/schemas/contact";
 import { RiMailSendLine } from "react-icons/ri";
 import { sendContactEmail } from "@/lib/sendEmail";
+import { toast } from "react-toastify";
 
 export const ContactForm = () => {
   const {
@@ -19,7 +20,16 @@ export const ContactForm = () => {
   });
 
   const sendContactRequest = async (data: TContactSchema) => {
-    await sendContactEmail(data);
+    const results = await sendContactEmail(data);
+
+    if (results.success) {
+      toast.success("Email sent successfully. We'll be in touch shortly");
+    }
+
+    if (!results.success) {
+      toast.error("We were unable to process your request");
+    }
+
     reset();
   };
 
