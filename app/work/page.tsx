@@ -102,6 +102,35 @@ export default function Work() {
           </Link>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
+          <span className="text-sm text-zinc-600">N3220524D0018</span>
+          <span className="font-bold text-xl mt-4">
+            KD Shipyard Repairs LLC (Subcontractor)
+          </span>
+          <div className="flex gap-2 text-sm">
+            <span className="bg-brand p-2 rounded text-white font-semibold">
+              Engineering &amp; Technical Services
+            </span>
+            <span className="bg-zinc-200 p-2 rounded">
+              11/03/2023 - Current
+            </span>
+          </div>
+          <p className="mt-8">
+            Olokun was subcontracted to provide support to KD Shipyard for MSC
+            General Ship Repair East Coast Multiple Award Contract. Team KDSR
+            shall be responsible for providing a broad range of ship repair for
+            MSC vessels including, but not limited to, pipefitting, welding,
+            machinist work, electrical work, boiler making and repairing, and
+            diesel mechanics. Team KDSR would be required to provide all labor,
+            equipment, supplies, materials, marine repair facilities, and other
+            items, except those specified as Government furnished, necessary to
+            successfully perform all ship repair work on MSC vessels in
+            accordance with resulting Delivery Orders, to include but not
+            limited to, the Delivery Order Work Item (WI) specifications,
+            drawings, manuals, references, and any and all other documents
+            incorporated into the Delivery Order.
+          </p>
+        </div>
+        <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
           <span className="text-sm text-zinc-600">N00039-23-D-9008</span>
           <span className="font-bold text-xl mt-4">
             VTG Defense (Subcontractor), NAVWAR

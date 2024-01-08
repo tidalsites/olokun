@@ -1,26 +1,21 @@
 import { Tenor_Sans } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight, FaCheckCircle } from "react-icons/fa";
-const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
+import { FaArrowRight } from "react-icons/fa";
 import { ListItem } from "../components/ListItem";
+const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
-type Capability = {
-  heading: string;
-  text: string;
-  services: string[];
-  image: string;
-};
+import capabilitiesData from "./capabilities.json";
 
-import { capabilities } from "./capabilities.json";
+const { capabilities } = capabilitiesData;
 
 import { Metadata } from "next";
 
-import completecloud from "@/public/completecloudlogo.png";
-import engineering from "@/public/capabilities/engineering.webp";
-import logistics from "@/public/capabilities/logistics.webp";
-import it from "@/public/capabilities/it.webp";
 import consulting from "@/public/capabilities/consulting.webp";
+import engineering from "@/public/capabilities/engineering.webp";
+import it from "@/public/capabilities/it.webp";
+import logistics from "@/public/capabilities/logistics.webp";
+import completecloud from "@/public/completecloudlogo.png";
 
 export const metadata: Metadata = {
   title: "Our Comprehensive Capabilities - Olokun LLC Government Solutions",

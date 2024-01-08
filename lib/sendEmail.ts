@@ -8,7 +8,7 @@ import { createElement } from "react";
 import { CreateEmailResponse } from "resend/build/src/emails/interfaces";
 import { ZodFormattedError } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("not_real");
 
 type ContactResponse = {
   success: boolean;
@@ -32,6 +32,14 @@ export const sendContactEmail = async (
       subject: "Olokun Contact form",
       react: createElement(ContactEmail, formData),
     });
+
+    // We are using Resend 1.1.0, which is only supposed to return { id: string}
+    // However, on error, the return value is { message: string; name: string; statusCode: number}
+    // This is not annotated in the Resend types <v2.0.0
+
+    if (!resp.id) {
+      return { success: false, data: resp };
+    }
 
     return { success: true, data: resp };
   } catch (error) {
