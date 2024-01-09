@@ -28,13 +28,15 @@ export default function Work() {
           </p>
         </section>
       </div>
-      <section className="flex flex-wrap lg:grid lg:grid-cols-2 gap-10 mb-20 mx-auto">
+      <section className="flex flex-wrap lg:grid lg:grid-cols-2 gap-10 mb-20 xl:mx-auto">
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose row-span-2">
-          <span className="text-sm text-zinc-600">N00189-22-D-0010</span>
+          <span className="text-sm text-zinc-600">
+            N00189-22-D-0010, CNAF EMS Support MAC Contract
+          </span>
           <span className="font-bold text-xl mt-4">
             Life Cycle Engineering (LCE) (Subcontractor), CNAF
           </span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Engineering &amp; Technical Services
             </span>
@@ -100,11 +102,11 @@ export default function Work() {
           </Link>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
-          <span className="text-sm text-zinc-600">
+          <span className="text-sm text-zinc-600 break-all">
             2023_Agreement_CompleteCloud_SeasideStaffing
           </span>
           <span className="font-bold text-xl mt-4">Seaside Staffing LLC</span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               CompleteCloud Services
             </span>
@@ -118,11 +120,13 @@ export default function Work() {
           </p>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
-          <span className="text-sm text-zinc-600">N3220524D0018</span>
+          <span className="text-sm text-zinc-600">
+            N32205-24-D-0018, General Ship Repair East Coast
+          </span>
           <span className="font-bold text-xl mt-4">
             KD Shipyard Repairs LLC (Subcontractor)
           </span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Engineering &amp; Technical Services
             </span>
@@ -147,11 +151,13 @@ export default function Work() {
           </p>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
-          <span className="text-sm text-zinc-600">N00039-23-D-9008</span>
+          <span className="text-sm text-zinc-600">
+            N00039-23-D-9008, CANES Full Deployment Contract
+          </span>
           <span className="font-bold text-xl mt-4">
             VTG Defense (Subcontractor), NAVWAR
           </span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Information Technology
             </span>
@@ -175,7 +181,7 @@ export default function Work() {
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
           <span className="text-sm text-zinc-600">OLK-001-22-01</span>
           <span className="font-bold text-xl mt-4">AVMAC LLC</span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Consulting Services - Ship Integration / AIT
             </span>
@@ -196,11 +202,11 @@ export default function Work() {
           </p>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
-          <span className="text-sm text-zinc-600">
+          <span className="text-sm text-zinc-600 break-all">
             2023_Agreement_Consulting_LPI
           </span>
           <span className="font-bold text-xl mt-4">LPI Technical Services</span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Consulting Services - Ship Repair / AIT
             </span>
@@ -220,11 +226,11 @@ export default function Work() {
           </p>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
-          <span className="text-sm text-zinc-600">
+          <span className="text-sm text-zinc-600 break-all">
             2023_Agreement_Consulting_Seaside
           </span>
           <span className="font-bold text-xl mt-4">Seaside Staffing LLC</span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Consulting Services - Ship Repair / AIT
             </span>
@@ -249,7 +255,7 @@ export default function Work() {
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
           <span className="text-sm text-zinc-600">C373230_MKT230014</span>
           <span className="font-bold text-xl mt-4">QED Systems, Inc.</span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Consulting Services - Ship Repair / AIT
             </span>
@@ -264,11 +270,11 @@ export default function Work() {
           </p>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
-          <span className="text-sm text-zinc-600">
+          <span className="text-sm text-zinc-600 break-all">
             2022_Agreement_Consulting_I-Mazing
           </span>
           <span className="font-bold text-xl mt-4">i-Mazing Solutions</span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Consulting Services - Information Technology
             </span>
@@ -286,13 +292,13 @@ export default function Work() {
           </p>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
-          <span className="text-sm text-zinc-600">
+          <span className="text-sm text-zinc-600 break-all">
             2022_Agreement_Consulting_kSARIA
           </span>
           <span className="font-bold text-xl mt-4">
             kSARIA Service Corporation
           </span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               Consulting Services - Electrical/Fiber Installation
             </span>
@@ -313,13 +319,13 @@ export default function Work() {
           </p>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
-          <span className="text-sm text-zinc-600">
+          <span className="text-sm text-zinc-600 break-all">
             2022_Agreement_CompleteCloud_PughAssociates
           </span>
           <span className="font-bold text-xl mt-4">
             Pugh Associates of Florida, LLC
           </span>
-          <div className="flex gap-2 text-sm">
+          <div className="flex flex-wrap gap-2 text-sm">
             <span className="bg-brand p-2 rounded text-white font-semibold">
               CompleteCloud Services
             </span>
