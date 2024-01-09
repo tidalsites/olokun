@@ -6,6 +6,7 @@ import "./globals.css";
 import Nav from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { ToastContainer } from "react-toastify";
+import AnalyticsTag from "./components/GoogleAnalyticsTag";
 
 const mont = Montserrat({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mont.className}>
+        <AnalyticsTag />
         <Nav />
         <ToastContainer />
         {children}
