@@ -1,9 +1,12 @@
+"use client";
+
 import { Tenor_Sans } from "next/font/google";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import bg from "@/public/ingenuity-bg-light.svg";
 import graphic from "@/public/why-us.webp";
 import Link from "next/link";
+import { motion } from "framer-motion";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 export const WhyUs = () => {
@@ -16,40 +19,102 @@ export const WhyUs = () => {
         <div className="absolute top-0 left-0 max-w-2xl scale-y-[-1]">
           <Image src={bg} alt="Ingenuity decoration" />
         </div>
-        <h2 className={`${tenor.className} text-2xl lg:text-4xl`}>Why Us</h2>
-        <p className="max-w-prose leading-8">
+        <motion.h2
+          initial={{ translateY: "100%", opacity: 0 }}
+          whileInView={{ translateY: "0", opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className={`${tenor.className} text-2xl lg:text-4xl`}
+        >
+          Why Us
+        </motion.h2>
+        <motion.p
+          initial={{ translateY: "100%", opacity: 0 }}
+          whileInView={{ translateY: "0", opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-prose leading-8"
+        >
           Olokun is uniquely situated to leverage our management expertise and
           professional talents related to Maritime Industry Modernization,
           Engineering, Capture Management, Strategic Teaming, and Life-Cycle
           Logistics to provide a quality, cost effective solution to our
           customers. Based on the past two (2) years of customer feedback,
           Olokun is disciplined by process and adaptive to customer needs.
-        </p>
-        <p className="max-w-prose leading-8">
+        </motion.p>
+        <motion.p
+          initial={{ translateY: "100%", opacity: 0 }}
+          whileInView={{ translateY: "0", opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-prose leading-8"
+        >
           Olokun&apos;s subject matter experts have backgrounds supporting
           design, engineering, installation, maintenance, and modernization
           support for DOD customers including, but not limited to:
-        </p>
-        <ul className="grid grid-cols-auto xl:grid-cols-3 sm:gap-2 w-full">
-          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+        </motion.p>
+        <motion.ul
+          initial={{ translateY: "100%", opacity: 0 }}
+          whileInView={{ translateY: "0", opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-auto xl:grid-cols-3 sm:gap-2 w-full"
+        >
+          <motion.li
+            initial={{ translateY: "100%", opacity: 0 }}
+            whileInView={{ translateY: "0", opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white p-4 place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand"
+          >
             Engineering &amp; Design Services and Management
-          </li>
-          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+          </motion.li>
+          <motion.li
+            initial={{ translateY: "100%", opacity: 0 }}
+            whileInView={{ translateY: "0", opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="bg-white p-4 place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand"
+          >
             Federal Defense Major Program and Project Management
-          </li>
-          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+          </motion.li>
+          <motion.li
+            initial={{ translateY: "100%", opacity: 0 }}
+            whileInView={{ translateY: "0", opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-white p-4 place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand"
+          >
             Financial Management
-          </li>
-          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+          </motion.li>
+          <motion.li
+            initial={{ translateY: "100%", opacity: 0 }}
+            whileInView={{ translateY: "0", opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="bg-white p-4 place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand"
+          >
             Information Technology Services
-          </li>
-          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+          </motion.li>
+          <motion.li
+            initial={{ translateY: "100%", opacity: 0 }}
+            whileInView={{ translateY: "0", opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="bg-white p-4 place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand"
+          >
             Logistic Services
-          </li>
-          <li className="bg-white p-4 max-w-[20ch]grid place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand">
+          </motion.li>
+          <motion.li
+            initial={{ translateY: "100%", opacity: 0 }}
+            whileInView={{ translateY: "0", opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="bg-white p-4 place-content-center text-sm font-semibold text-black border-b-2 border-b-zinc-200 sm:border-b-0 sm:border-l-4 sm:border-l-brand"
+          >
             Waterfront Industrial Services
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
         <Link
           className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group"
           href="/about"
