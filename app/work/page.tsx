@@ -20,13 +20,11 @@ export default function Work() {
             Discover the Olokun Difference
           </h2>
           <p className="max-w-prose leading-6 py-8">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cum
-            rem, enim saepe, inventore accusantium accusamus harum, quis animi
-            qui perferendis quae similique quos? Magni, at non voluptates autem
-            repudiandae cum consequatur enim culpa quod esse ad fuga, natus,
-            rerum quibusdam laboriosam atque expedita eos saepe recusandae
-            perspiciatis sequi earum accusantium quos. Ratione, provident
-            repellendus.
+            At Olokun our work illustrates our willingness to work with our
+            teammates for innovative and quality solutions that best fit the
+            needs of government and commercial entities. Below we have provided
+            our prime and subcontractors for government entities, as well as our
+            consulting services work for commercial entities.
           </p>
         </section>
       </div>
@@ -100,6 +98,24 @@ export default function Work() {
             <span>View Feedback</span>
             <FaArrowRight />
           </Link>
+        </div>
+        <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
+          <span className="text-sm text-zinc-600">
+            2023_Agreement_CompleteCloud_SeasideStaffing
+          </span>
+          <span className="font-bold text-xl mt-4">Seaside Staffing LLC</span>
+          <div className="flex gap-2 text-sm">
+            <span className="bg-brand p-2 rounded text-white font-semibold">
+              CompleteCloud Services
+            </span>
+            <span className="bg-zinc-200 p-2 rounded">
+              11/03/2023 - Current
+            </span>
+          </div>
+          <p className="mt-8">
+            Olokun LLC was contracted to provide an Information Technology (IT)
+            infrastructure to meet DOD and CMMC compliance requirements.
+          </p>
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
           <span className="text-sm text-zinc-600">N3220524D0018</span>

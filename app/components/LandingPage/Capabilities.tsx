@@ -161,7 +161,7 @@ export const Capabilities = () => {
           animate={bottomRightControls}
           variants={variants}
           transition={{ duration: 0.75 }}
-          className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 [--tx-start:100%] [--ty-start:0]"
+          className="flex flex-col py-4 h-full col-span-2 xl:col-span-1 [--tx-start:50%] [--ty-start:0]"
           ref={scrollBottomRightRef}
         >
           <h3 className="text-2xl pr-8 mx-4 lg:mx-8 py-4 font-semibold border-b-2 border-brand w-fit">
