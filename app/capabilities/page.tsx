@@ -15,7 +15,7 @@ import consulting from "@/public/capabilities/consulting.webp";
 import engineering from "@/public/capabilities/engineering.webp";
 import it from "@/public/capabilities/it.webp";
 import logistics from "@/public/capabilities/logistics.webp";
-import completecloud from "@/public/completecloudlogo.png";
+import completecloud from "@/public/completecloud.png";
 
 export const metadata: Metadata = {
   title: "Our Comprehensive Capabilities - Olokun LLC Government Solutions",
@@ -106,47 +106,110 @@ export default function Capabilities() {
               </section>
             );
           })}
-          <section>
-            <h2
-              className={`${tenor.className} text-4xl text-zinc-800 lg:mt-40 col-span-2`}
-            >
+          <section className="xl:grid grid-cols-[1fr,auto]">
+            <h2 className={`${tenor.className} text-4xl text-zinc-800 mb-8`}>
               CompleteCloud
             </h2>
-            <div className="flex gap-8 mt-8 mb-20 col-span-2">
-              <div>
-                <p className="max-w-prose leading-6">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium perspiciatis doloremque consectetur dolorum sequi
-                  fuga et facere, natus, voluptas esse cupiditate magnam
-                  excepturi praesentium porro id. Cupiditate sint magnam
-                  incidunt dignissimos voluptas nostrum id doloribus ratione
-                  blanditiis consequatur aliquid, vel tempora iure nesciunt
-                  repudiandae, dolorem eos perferendis. In ab expedita assumenda
-                  esse repellendus eos dolores saepe perspiciatis voluptas
-                  laudantium perferendis itaque deleniti sed rerum et ad
-                  doloremque eveniet dolorum suscipit aut tempora, quaerat
-                  error? Aut modi, esse vel deserunt cupiditate error
-                  voluptatem?
-                </p>
-                <Link
-                  className="bg-black text-white border-2 border-black rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit mt-8"
-                  href="/completecloud"
-                >
-                  <div className="flex p-2 rounded-full bg-white text-black items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
-                    <FaArrowRight />
-                  </div>
-                  <span>Discover CompleteCloud</span>
-                </Link>
-              </div>
-              <div className="hidden lg:flex items-center p-4 border-l-2 border-zinc-300">
-                <div className="max-h-[150px]">
-                  <Image
-                    src={completecloud}
-                    alt="CompleteCloud"
-                    className="max-h-full w-auto"
-                  />
+            <div className="hidden xl:row-span-2 w-full h-full xl:flex justify-end max-h-[650px]">
+              <Image
+                src={completecloud}
+                alt="CompleteCloud"
+                className="max-h-full w-auto"
+              />
+            </div>
+            <div className="flex flex-col gap-8 col-span-2 xl:col-span-1 mb-20">
+              <p className="max-w-prose leading-6 mb-8">
+                Olokun&apos;s partnership with Avatara CompleteCloud Platform
+                provides clients/customers with a holistic, private cloud
+                solution for security and productivity. No matter the industry,
+                CompleteCloud has an entire Information Technology (IT)
+                infrastructure at a per user per month cost for scalability and
+                affordability. Here is why:
+              </p>
+              <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 xl:pr-20">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    Predictable Cost
+                  </span>
+                  <p>Predictable IT budget, no capital expenses</p>
+                </li>
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    Business Continuity
+                  </span>
+                  <p>All data backed up in secondary data center</p>
+                </li>
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    Mobile Flexibility
+                  </span>
+                  <p>
+                    Users have the same computing experience at home as in the
+                    office, no clunky VPN connection
+                  </p>
+                </li>
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    Collaboration Tools
+                  </span>
+                  <p>
+                    Centralized, secure, cost-effective Unified Communications
+                    Suite
+                  </p>
+                </li>
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    Robust Security
+                  </span>
+                  <p>
+                    Layered managed security on top of a platform built from the
+                    ground up with security in mind
+                  </p>
+                </li>
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    Industry Compliance
+                  </span>
+                  <p>Audit ready, all the time (FDIC, NIST, HIPAA, CMMC)</p>
+                </li>
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    Available Support
+                  </span>
+                  <p>
+                    Centralization &amp; standardization enables faster
+                    resolution from our 24/7 US-based team
+                  </p>
+                </li>
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    Scalability
+                  </span>
+                  <p>
+                    Simplify M&amp;A, growth, and staffing while increasing
+                    valuation for sale
+                  </p>
+                </li>
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                  <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
+                    IT Management
+                  </span>
+                  <p>
+                    Single source solution to all things Information Technology
+                    (IT)
+                  </p>
+                </li>
+              </ul>
+
+              <Link
+                className="bg-black text-white border-2 border-black rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit h-fit mt-8"
+                href="/completecloud"
+              >
+                <div className="flex p-2 rounded-full bg-white text-black items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
+                  <FaArrowRight />
                 </div>
-              </div>
+                <span>Discover CompleteCloud</span>
+              </Link>
             </div>
           </section>
         </div>

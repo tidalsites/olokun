@@ -56,7 +56,7 @@ export default function About() {
             Who We Serve
           </h2>
           <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0">
-            <div className="bg-black/30 bg-blend-multiply bg-[url(/gov.png)] h-[250px] bg-cover"></div>
+            <div className="bg-black/30 bg-blend-multiply bg-[url(/gov.webp)] h-[250px] bg-cover"></div>
             <h3 className="p-4 text-xl font-semibold border-b-2 border-b-brand">
               Government
             </h3>
@@ -72,7 +72,7 @@ export default function About() {
             </p>
           </div>
           <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0 flex flex-col">
-            <div className="bg-black/30 bg-blend-multiply bg-[url(/commercial.png)] h-[250px] bg-cover"></div>
+            <div className="bg-black/30 bg-blend-multiply bg-[url(/commercial.webp)] h-[250px] bg-cover"></div>
 
             <h3 className="p-4 text-xl font-semibold border-b-2 border-b-brand">
               Commercial

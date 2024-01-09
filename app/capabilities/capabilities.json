@@ -27,19 +27,17 @@
     },
     {
       "heading": "Logistics Support",
-      "text": "At Olokun LLC, our logistics team can provide a wide range of services to support customers' requirements. We provide integrated logistics support services in the acquisition, planning, and life cycle support. To provide dynamic, fast, and innovative results, our team is adaptable to our customer's requirements and standards.",
+      "text": "At Olokun LLC, our logistics team can provide a wide range of services to support customers' requirements. We provide integrated logistics support services in acquisition, planning, and life cycle support. To provide dynamic, fast, and innovative results, our team is adaptable to our customer's requirements and standards.",
       "services": [
         "Program/Project Management",
-        "Planning and Estimating",
-        "Commonality Maximization",
-        "Obsolescence Management",
-        "Item Reduction",
-        "Technical Manual Conversions",
-        "Warehousing support",
-        "Alteration Tracking",
-        "Material Ordering",
-        "Scheduling",
-        "Work Packaging"
+        "Supply Chain Management",
+        "Inventory Management",
+        "Transportation and Distribution",
+        "Warehouse Management",
+        "Demand Planning and Forecasting",
+        "Order Fulfillment",
+        "Reverse Logistics",
+        "Technology and Tools for Integration"
       ],
       "image": "logistics",
       "alt": "Pen and keyboard"
