@@ -11,7 +11,7 @@ function AnalyticsTag() {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', ${tag});
+          gtag('config', '${tag}');
         `}
       </Script>
     </>
