@@ -107,7 +107,7 @@ export const Footer = () => {
               <FaEnvelope />
             </Link>
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61554919066439"
               className="text-lg grid place-content-center rounded-full bg-white/10 p-2 transition-all hover:bg-white hover:text-black"
               aria-label="Facebook"
             >
@@ -119,13 +119,6 @@ export const Footer = () => {
               aria-label="Linkedin"
             >
               <FaLinkedin />
-            </Link>
-            <Link
-              href="https://twitter.com"
-              className="text-lg grid place-content-center rounded-full bg-white/10 p-2 transition-all hover:bg-white hover:text-black"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
             </Link>
           </div>
         </section>

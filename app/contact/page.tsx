@@ -72,7 +72,7 @@ export default function Contact() {
                 <FaEnvelope />
               </Link>
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61554919066439"
                 className="text-xl grid place-content-center rounded-full bg-white p-2 hover:bg-black hover:text-white transition-all"
                 aria-label="Facebook"
               >

@@ -46,67 +46,62 @@ export default function Capabilities() {
             if (image === "logistics") {
               img = logistics;
             }
-            return (
+            return isAltPosition ? (
               <section
-                className="xl:grid grid-cols-[1fr,auto]"
+                className="xl:grid grid-cols-[auto,1fr] gap-x-20"
                 key={`capability_${i}`}
               >
-                {isAltPosition ? (
-                  <>
-                    <div className="hidden xl:row-span-2 w-full h-full xl:flex">
-                      <Image
-                        src={img}
-                        alt={alt}
-                        className="max-h-full w-auto"
-                        priority={i === 0}
-                      />
-                    </div>
-                    <h2
-                      className={`${tenor.className} text-4xl text-zinc-800 mb-8`}
-                    >
-                      {heading}
-                    </h2>
-                    <div className="flex flex-col gap-8 col-span-2 xl:col-span-1 mb-20">
-                      <p className="max-w-prose leading-6">{text}</p>
-                      <div className="flex flex-col sm:grid grid-cols-2 gap-4 justify-between py-4 border-t-2 border-zinc-300 w-fit xl:w-full">
-                        {services.map((service, i) => {
-                          return (
-                            <ListItem text={service} key={`${heading}_${i}`} />
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <h2
-                      className={`${tenor.className} text-4xl text-zinc-800 mb-8`}
-                    >
-                      {heading}
-                    </h2>
-                    <div className="hidden xl:row-span-2 w-full h-full xl:flex justify-end max-h-[650px]">
-                      <Image
-                        src={img}
-                        alt={alt}
-                        className="max-h-full w-auto"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-8 col-span-2 xl:col-span-1 mb-20">
-                      <p className="max-w-prose leading-6">{text}</p>
-                      <div className="flex flex-col sm:grid grid-cols-2 gap-4 justify-between py-4 border-t-2 border-zinc-300 w-fit xl:w-full">
-                        {services.map((service, i) => {
-                          return (
-                            <ListItem text={service} key={`${heading}_${i}`} />
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </>
-                )}
+                <div className="hidden xl:row-span-2 w-full h-full xl:flex">
+                  <Image
+                    src={img}
+                    alt={alt}
+                    className="max-h-full w-auto"
+                    priority={i === 0}
+                  />
+                </div>
+                <h2
+                  className={`${tenor.className} text-4xl text-zinc-800 mb-8`}
+                >
+                  {heading}
+                </h2>
+                <div className="flex flex-col gap-8 col-span-2 xl:col-span-1 mb-20">
+                  <p className="max-w-prose leading-6">{text}</p>
+                  <div className="flex flex-col sm:grid grid-cols-2 gap-4 justify-between py-4 border-t-2 border-zinc-300 w-fit xl:w-full">
+                    {services.map((service, i) => {
+                      return (
+                        <ListItem text={service} key={`${heading}_${i}`} />
+                      );
+                    })}
+                  </div>
+                </div>
+              </section>
+            ) : (
+              <section
+                className="xl:grid grid-cols-[1fr,auto] gap-x-20"
+                key={`capability_${i}`}
+              >
+                <h2
+                  className={`${tenor.className} text-4xl text-zinc-800 mb-8`}
+                >
+                  {heading}
+                </h2>
+                <div className="hidden xl:row-span-2 w-full h-full xl:flex justify-end max-h-[650px]">
+                  <Image src={img} alt={alt} className="max-h-full w-auto" />
+                </div>
+                <div className="flex flex-col gap-8 col-span-2 xl:col-span-1 mb-20">
+                  <p className="max-w-prose leading-6">{text}</p>
+                  <div className="flex flex-col sm:grid grid-cols-2 gap-4 justify-between py-4 border-t-2 border-zinc-300 w-fit xl:w-full">
+                    {services.map((service, i) => {
+                      return (
+                        <ListItem text={service} key={`${heading}_${i}`} />
+                      );
+                    })}
+                  </div>
+                </div>
               </section>
             );
           })}
-          <section className="xl:grid grid-cols-[1fr,auto]">
+          <section className="xl:grid grid-cols-[1fr,auto] mb-20">
             <h2 className={`${tenor.className} text-4xl text-zinc-800 mb-8`}>
               CompleteCloud
             </h2>
@@ -144,8 +139,8 @@ export default function Capabilities() {
                     Mobile Flexibility
                   </span>
                   <p>
-                    Users have the same computing experience at home as in the
-                    office, no clunky VPN connection
+                    Users have the same computing experience at home or on
+                    travel as in the office with no clunky VPN connection
                   </p>
                 </li>
                 <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
@@ -153,8 +148,8 @@ export default function Capabilities() {
                     Collaboration Tools
                   </span>
                   <p>
-                    Centralized, secure, cost-effective Unified Communications
-                    Suite
+                    Centralized, secure, cost-effective using a Unified
+                    Communications Suite
                   </p>
                 </li>
                 <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
