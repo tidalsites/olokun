@@ -27,6 +27,11 @@ export const ContactForm = () => {
     }
 
     if (!results.success) {
+      if (results.error) console.error(results.error);
+
+      if (!results.error && results.data) {
+        console.error(results.data);
+      }
       toast.error("We were unable to process your request");
     }
 

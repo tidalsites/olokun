@@ -8,7 +8,7 @@ import { createElement } from "react";
 import { CreateEmailResponse } from "resend/build/src/emails/interfaces";
 import { ZodFormattedError } from "zod";
 
-const resend = new Resend("not_real");
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 type ContactResponse = {
   success: boolean;
@@ -27,8 +27,8 @@ export const sendContactEmail = async (
 
   try {
     const resp = await resend.emails.send({
-      from: "vernon.hall@olokunllc.com",
-      to: "devin.haynes@tidalsites.com",
+      from: "no-reply@olokunllc.com",
+      to: "devin@tidalsites.com",
       subject: "Olokun Contact form",
       react: createElement(ContactEmail, formData),
     });
@@ -38,11 +38,13 @@ export const sendContactEmail = async (
     // This is not annotated in the Resend types <v2.0.0
 
     if (!resp.id) {
+      console.log("No response Id");
       return { success: false, data: resp };
     }
 
     return { success: true, data: resp };
   } catch (error) {
+    console.log("Error Thrown");
     let returnedError = "Unknown error occurred";
 
     if (error instanceof Error) {
