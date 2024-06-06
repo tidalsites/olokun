@@ -61,17 +61,19 @@ export const Team = () => {
             </div>
             <div className="border-t-brand border-t-2 pt-4">
               <p>
-                Business manager and leader with over 37 years&apos; experience
-                as a Surface Warfare Naval Officer, civil service electronics
-                engineer, engineering and design manager, business consultant,
-                and business developer. Bill has a bachelor&apos;s degree in
-                electrical engineering, and an MBA with a focus on strategy
-                development. He maintains the Project Management Professional
-                (PMP) certification from the Project Management Institute (PMI)
-                and the Practitioner certification from the Association of
-                Proposal Management Professionals (APMP). He uses his expertise
-                in these areas as a coach and mentor to help others develop as
-                managers, leaders.
+                A senior aviation and shipboard management professional, Bert
+                retired as a Commander from the U.S. Navy after a 31-year career
+                and started AVMAC in 2009 with Don Buzard, a shipmate and a
+                30-year U.S. Navy retired Commander. Bert has extensive aircraft
+                and shipboard management, maintenance, acquisition, logistics,
+                operations and safety experience that both he and Don leveraged
+                to provide aviation and maritime support services to both the
+                Government and private industry. Bert has incrementally grown
+                AVMAC every year into a multimillion-dollar award-winning
+                company. Nationally, AVMAC has been recognized as a Inc.
+                Magazine Private Titan in 2020 and has made the Inc. 5000 list
+                of fastest growing businesses the past two years with over 500
+                employees and revenues exceeding $50M.
               </p>
               <div className="text-sm mt-4 bg-brand p-4 rounded relative isolate">
                 <p>
@@ -104,17 +106,20 @@ export const Team = () => {
             </div>
             <div className="border-t-brand border-t-2 pt-4">
               <p>
-                Business manager and leader with over 37 years&apos; experience
-                as a Surface Warfare Naval Officer, civil service electronics
-                engineer, engineering and design manager, business consultant,
-                and business developer. Bill has a bachelor&apos;s degree in
-                electrical engineering, and an MBA with a focus on strategy
-                development. He maintains the Project Management Professional
-                (PMP) certification from the Project Management Institute (PMI)
-                and the Practitioner certification from the Association of
-                Proposal Management Professionals (APMP). He uses his expertise
-                in these areas as a coach and mentor to help others develop as
-                managers, leaders.
+                A 30-year Navy Veteran Aviation Maintenance Officer, Don brought
+                the same leadership and management strategies that made him
+                successful during his Navy career to AVMAC, and AVMAC too has
+                been successful over the past 12 years. Don and his business
+                partner, Bert Ortiz, have built AVMAC into a highly successful
+                company from a start-up. AVMAC is an SBA 8(a) Business
+                Development Program success story, a Service-Disabled Veteran
+                Owned Small Business, and a Small Disadvantaged Owned Business
+                who specializes in aviation and ship modernization technical
+                support services. AVMAC has leveraged procurement program
+                opportunities made available through the SBA to propel AVMAC
+                from a start-up to a 60-million-dollar company in 12 years.
+                AVMAC owners&apos; corporate experiences is invaluable, which is
+                why Olokun has asked Don to be on the Board of Advisors.
               </p>
               <div className="text-sm mt-4 bg-brand p-4 rounded relative isolate">
                 <p>
