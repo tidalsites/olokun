@@ -19,7 +19,7 @@ export const Footer = () => {
         </p>
         <p className="max-w-[30ch] text-sm leading-6 py-2">
           Olokun LLC is an SBA Certified Minority-Owned Business Enterprise
-          (MBE) located in Norfolk, Virginia. We provide consulting,
+          (MBE) located in Chesapeake, Virginia. We provide consulting,
           engineering, information technology, and logistics solutions for
           local, state, and federal government organizations, military, private
           industry, and public entities.
