@@ -31,6 +31,37 @@ export default function Work() {
       <section className="flex flex-wrap lg:grid lg:grid-cols-2 gap-10 mb-20 xl:mx-auto">
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose row-span-2">
           <span className="text-sm text-zinc-600">
+            N00178-25-D-7641, Seaport NXG
+          </span>
+          <span className="font-bold text-xl mt-4">
+            NSWCDD Seaport Next Generation (Seaport NXG)
+          </span>
+          <div className="flex flex-wrap gap-2 text-sm">
+            <span className="bg-brand p-2 rounded text-white font-semibold">
+              Engineering &amp; Technical Services
+            </span>
+            <span className="bg-zinc-200 p-2 rounded">
+              01/02/2025 - 01/01/2029
+            </span>
+          </div>
+          <p className="mt-8">
+            Olokun&apos;s Awarded Prime Contract N00178-25-D-7641 for NSWCDD
+            Seaport Next Generation (Seaport- NXG) Opportunity
+            (N00178-24-R-7000)
+          </p>
+          <p className="mt-4">
+            SeaPort-NxG is the Navy&apos;s electronic platform for acquiring
+            support services in 23 functional areas including Engineering,
+            Financial Management, and Program Management. The Navy Systems
+            Commands (NAVSEA, NAVAIR, NAVWAR, NAVFAC, and NAVSUP), the Office of
+            Naval Research (ONR), Military Sealift Command (MSC), and the United
+            States Marine Corps (USMC) compete their service requirements
+            amongst 2400+ SeaPort-NxG Indefinite Delivery Indefinite Quantity
+            (IDIQ) multiple award contract holders.
+          </p>
+        </div>
+        <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose row-span-2">
+          <span className="text-sm text-zinc-600">
             N00189-22-D-0010, CNAF EMS Support MAC Contract
           </span>
           <span className="font-bold text-xl mt-4">
@@ -96,10 +127,10 @@ export default function Work() {
               CVN IPT Mock Availability Support
             </li>
           </ul>
-          <Link className="mt-8 text-[--link] flex gap-2 items-center" href="#">
+          {/* <Link className="mt-8 text-[--link] flex gap-2 items-center" href="#">
             <span>View Feedback</span>
             <FaArrowRight />
-          </Link>
+          </Link> */}
         </div>
         <div className="p-4 rounded-lg w-fit bg-white flex flex-col max-w-prose">
           <span className="text-sm text-zinc-600 break-all">
