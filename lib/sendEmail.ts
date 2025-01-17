@@ -26,14 +26,10 @@ export const sendContactEmail = async (
   try {
     const data = await resend.emails.send({
       from: "no-reply@olokunllc.com",
-      to: "devin@tidalsites.com",
+      to: "vernon.hall@olokunllc.com",
       subject: "Olokun Contact form",
       react: ContactEmail({ ...formData }),
     });
-
-    // We are using Resend 1.1.0, which is only supposed to return { id: string}
-    // However, on error, the return value is { message: string; name: string; statusCode: number}
-    // This is not annotated in the Resend types <v2.0.0
 
     if (!data || !data.data || !data.data.id) {
       console.log("No response Id");
