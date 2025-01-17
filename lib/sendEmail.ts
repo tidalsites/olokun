@@ -4,8 +4,6 @@ import { ContactSchema, TContactSchema } from "@/schemas/contact";
 import { Resend } from "resend";
 
 import { ContactEmail } from "@/app/components/ContactEmailTemplate";
-import { createElement } from "react";
-import { CreateEmailResponse } from "resend/build/src/emails/interfaces";
 import { ZodFormattedError } from "zod";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -13,7 +11,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 type ContactResponse = {
   success: boolean;
   error?: ZodFormattedError<TContactSchema> | string;
-  data?: CreateEmailResponse;
+  data?: any;
 };
 
 export const sendContactEmail = async (
@@ -26,23 +24,19 @@ export const sendContactEmail = async (
   }
 
   try {
-    const resp = await resend.emails.send({
+    const data = await resend.emails.send({
       from: "no-reply@olokunllc.com",
       to: "vernon.hall@olokunllc.com",
       subject: "Olokun Contact form",
-      react: createElement(ContactEmail, formData),
+      react: ContactEmail({ ...formData }),
     });
 
-    // We are using Resend 1.1.0, which is only supposed to return { id: string}
-    // However, on error, the return value is { message: string; name: string; statusCode: number}
-    // This is not annotated in the Resend types <v2.0.0
-
-    if (!resp.id) {
+    if (!data || !data.data || !data.data.id) {
       console.log("No response Id");
-      return { success: false, data: resp };
+      return { success: false, data };
     }
 
-    return { success: true, data: resp };
+    return { success: true, data };
   } catch (error) {
     console.log("Error Thrown");
     let returnedError = "Unknown error occurred";
