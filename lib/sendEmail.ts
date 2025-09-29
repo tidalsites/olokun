@@ -4,13 +4,13 @@ import { ContactSchema, TContactSchema } from "@/schemas/contact";
 import { Resend } from "resend";
 
 import { ContactEmail } from "@/app/components/ContactEmailTemplate";
-import { ZodFormattedError } from "zod";
+import { ZodError } from "zod";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 type ContactResponse = {
   success: boolean;
-  error?: ZodFormattedError<TContactSchema> | string;
+  error?: ZodError<TContactSchema> | string;
   data?: any;
 };
 
@@ -20,7 +20,7 @@ export const sendContactEmail = async (
   const result = ContactSchema.safeParse(formData);
 
   if (!result.success) {
-    return { success: false, error: result.error.format() };
+    return { success: false, error: result.error };
   }
 
   try {

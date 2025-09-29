@@ -24,10 +24,10 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
-    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">Contact Us</h1>
-        <div className="flex flex-col md:grid md:grid-cols-[1fr,auto] lg:grid-cols-2 md:gap-8 gap-20">
+        <div className="flex flex-col md:grid md:grid-cols-[1fr_auto] lg:grid-cols-2 md:gap-8 gap-20">
           <ContactForm />
           <div className="flex flex-col gap-4 w-fit mx-auto">
             <div className="flex items-center isolate">
@@ -94,7 +94,7 @@ export default function Contact() {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 col-span-2 lg:col-span-1 gap-4 justify-center mt-auto bg-black text-white w-full p-8 rounded">
+          <div className="grid grid-cols-2 col-span-2 lg:col-span-1 gap-4 justify-center mt-auto bg-black text-white w-full p-8 rounded-sm">
             <div className="flex flex-col gap-4 col-span-2 sm:col-span-1">
               <p>Looking for a new uplifting career?</p>
               <p className="text-3xl w-full md:max-w-[15ch] grow flex items-center bg-white text-black justify-center p-4 border-b-4 border-b-brand">
@@ -116,7 +116,7 @@ export default function Contact() {
               <span className="grow group-hover:translate-x-2 transition-all">
                 Apply Today
               </span>
-              <div className="flex p-2 bg-brand text-white items-center justify-center rounded group-hover:pl-6 transition-all">
+              <div className="flex p-2 bg-brand text-white items-center justify-center rounded-sm group-hover:pl-6 transition-all">
                 <FaArrowRight />
               </div>
             </Link>

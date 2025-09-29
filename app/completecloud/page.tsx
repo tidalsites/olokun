@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function CompleteCloud() {
   return (
-    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">CompleteCloud</h1>
         <div className="flex flex-col">
@@ -30,7 +30,7 @@ export default function CompleteCloud() {
             an all-inclusive per user per month pricing model, giving our
             customers a competitive advantage and peace of mind.
           </p>
-          <div className="mt-4 outline -outline-offset-8 outline-2 outline-brand w-fit">
+          <div className="mt-4 outline-solid -outline-offset-8 outline-2 outline-brand w-fit">
             <Image src={avatara} alt="avatara dashboard" priority />
           </div>
           <p className="max-w-prose leading-6 py-8 mt-4">

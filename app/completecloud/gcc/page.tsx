@@ -3,7 +3,7 @@ const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 export default function CompleteCloudVsGCCHigh() {
   return (
-    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">CompleteCloud vs. GCC High</h1>
         <div className="flex flex-col">

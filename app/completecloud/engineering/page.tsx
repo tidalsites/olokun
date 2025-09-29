@@ -9,7 +9,7 @@ import data from "@/public/casestudies/data.png";
 
 export default function Engineering() {
   return (
-    <div className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <div className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">Engineering</h1>
         <div className="flex flex-col">
@@ -104,7 +104,7 @@ export default function Engineering() {
               </div>
 
               <div className="col-span-2 md:col-span-1 grid grid-cols-2 gap-8 justify-center mb-20 py-8 px-4 border-t-2 border-t-brand border-b-2 border-b-brand">
-                <div className="flex flex-col bg-white rounded p-4 items-center">
+                <div className="flex flex-col bg-white rounded-sm p-4 items-center">
                   <span className="font-bold text-center text-2xl">
                     130 Users
                   </span>
@@ -115,21 +115,21 @@ export default function Engineering() {
                     className="mt-4"
                   />
                 </div>
-                <div className="flex flex-col bg-white rounded p-4 items-center">
+                <div className="flex flex-col bg-white rounded-sm p-4 items-center">
                   <span className="font-bold text-center text-2xl">
                     7 Sites
                   </span>
                   <span className="text-zinc-600 -mt-2">133% Increase</span>
                   <Image src={sites} alt="Scrollwork icon" className="mt-4" />
                 </div>
-                <div className="flex flex-col bg-white rounded p-4 items-center">
+                <div className="flex flex-col bg-white rounded-sm p-4 items-center">
                   <span className="font-bold text-center text-2xl">
                     6 Years
                   </span>
                   <span className="text-zinc-600 -mt-2">as a customer</span>
                   <Image src={customer} alt="Shooting star" className="mt-4" />
                 </div>
-                <div className="flex flex-col bg-white rounded p-4 items-center">
+                <div className="flex flex-col bg-white rounded-sm p-4 items-center">
                   <span className="font-bold text-center text-2xl">
                     30 Terabytes
                   </span>

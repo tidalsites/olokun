@@ -14,7 +14,7 @@ export const ContactUs = () => {
           Get Started Today!
         </h2>
         <Link
-          className="bg-white text-neutral-900 border-2 rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit border-px border-brand"
+          className="bg-white text-neutral-900 border-2 rounded-sm px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit border-px border-brand"
           href="/contact"
         >
           <div className="flex p-2 rounded-full bg-brand text-white items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
@@ -23,7 +23,7 @@ export const ContactUs = () => {
           <span className="bg-white">Contact Us</span>
         </Link>
       </div>
-      <div className="bg-black hidden lg:block bg-[url(/contact-graphic.webp)] bg-cover overflow-hidden relative after:absolute after:h-full after:aspect-square after:-rotate-45 after:-bottom-4 after:origin-bottom-left after:bg-zinc-200 after:border-double after:border-[12px] after:border-brand after:outline after:outline-4 after:outline-white"></div>
+      <div className="bg-black hidden lg:block bg-[url(/contact-graphic.webp)] bg-cover overflow-hidden relative after:absolute after:h-full after:aspect-square after:-rotate-45 after:-bottom-4 after:origin-bottom-left after:bg-zinc-200 after:border-double after:border-12 after:border-brand after:outline-solid after:outline-4 after:outline-white"></div>
     </section>
   );
 };

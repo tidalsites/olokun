@@ -14,7 +14,7 @@ export const CaseStudies = () => {
     <div className="flex flex-col items-center md:justify-center md:flex-row md:flex-wrap xl:grid grid-cols-3 gap-8 mb-20 mt-8">
       <Link
         href="/completecloud/engineering"
-        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-[420/310] relative isolate group"
+        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-420/310 relative isolate group"
       >
         <div className="w-full h-full -z-10 brightness-90 group-hover:brightness-100">
           <Image
@@ -32,7 +32,7 @@ export const CaseStudies = () => {
       </Link>
       <Link
         href="/completecloud/aerospace"
-        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-[420/310] relative isolate group"
+        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-420/310 relative isolate group"
       >
         <div className="absolute inset-0 -z-10 brightness-90 group-hover:brightness-100">
           <Image
@@ -49,7 +49,7 @@ export const CaseStudies = () => {
       </Link>
       <Link
         href="/completecloud/geomatics"
-        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-[420/310] relative isolate group"
+        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-420/310 relative isolate group"
       >
         <div className="absolute inset-0 -z-10 brightness-90 group-hover:brightness-100">
           <Image
@@ -66,7 +66,7 @@ export const CaseStudies = () => {
       </Link>
       <Link
         href="/completecloud/gcc"
-        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-[420/310] relative isolate group"
+        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-420/310 relative isolate group"
       >
         <div className="absolute inset-0 -z-10 brightness-90 group-hover:brightness-100">
           <Image
@@ -83,7 +83,7 @@ export const CaseStudies = () => {
       </Link>
       <Link
         href="/completecloud/banking"
-        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-[420/310] relative isolate group"
+        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-420/310 relative isolate group"
       >
         <div className="absolute inset-0 -z-10 brightness-90 group-hover:brightness-100">
           <Image
@@ -100,7 +100,7 @@ export const CaseStudies = () => {
       </Link>
       <Link
         href="/completecloud/distribution"
-        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-[420/310] relative isolate group"
+        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-420/310 relative isolate group"
       >
         <div className="absolute inset-0 -z-10 brightness-90 group-hover:brightness-100">
           <Image
@@ -117,7 +117,7 @@ export const CaseStudies = () => {
       </Link>
       <Link
         href="/completecloud/educational-institution"
-        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-[420/310] relative isolate group"
+        className="rounded bg-white w-[min(420px,calc(100vw-2rem))] xl:w-auto aspect-420/310 relative isolate group"
       >
         <div className="absolute inset-0 -z-10 brightness-90 group-hover:brightness-100">
           <Image

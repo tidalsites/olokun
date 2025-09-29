@@ -16,7 +16,7 @@ import avatara from "@/public/avatara.png";
 export const Features = () => {
   return (
     <div className="mb-20 grid gap-2 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:gap-8">
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiHardDrivesFill className="text-brand text-6xl" />
         </span>
@@ -28,7 +28,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiCloudFill className="text-brand text-6xl" />
         </span>
@@ -41,7 +41,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiPlugsConnectedBold className="text-brand text-6xl" />
         </span>
@@ -53,7 +53,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiComputerTowerFill className="text-brand text-6xl" />
         </span>
@@ -66,7 +66,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiShieldCheckFill className="text-brand text-6xl" />
         </span>
@@ -79,7 +79,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiCircuitryFill className="text-brand text-6xl" />
         </span>
@@ -92,7 +92,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiHeadsetFill className="text-brand text-6xl" />
         </span>
@@ -103,7 +103,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiUserSwitchFill className="text-brand text-6xl" />
         </span>
@@ -116,7 +116,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <PiLineSegmentsFill className="text-brand text-6xl" />
         </span>
@@ -128,7 +128,7 @@ export const Features = () => {
           </p>
         </div>
       </div>
-      <div className="grid lg:grid-cols-[auto,1fr] gap-2 text-sm p-2 w-fit rounded isolate bg-white">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-2 text-sm p-2 w-fit rounded-sm isolate bg-white">
         <span className="flex h-fit w-fit justify-center row-span-2">
           <Image src={avatara} alt="Avatara" height="60" width="60" />
         </span>

@@ -129,7 +129,7 @@ export const Footer = () => {
         </section>
       </div>
 
-      <div className="text-sm py-2 border-t-[1px] border-t-white w-full flex justify-between px-4">
+      <div className="text-sm py-2 border-t border-t-white w-full flex justify-between px-4">
         <span>&copy; 2025 Olokun LLC. All Rights Reserved</span>
         <span>
           Designed by{" "}

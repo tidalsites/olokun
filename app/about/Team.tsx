@@ -8,12 +8,12 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 
 export const Team = () => {
   return (
-    <div className="bg-black py-8 text-white flex flex-col md:grid md:grid-cols-[auto,1fr] md:mt-8 -mx-4 lg:mx-0 gap-8">
+    <div className="bg-black py-8 text-white flex flex-col md:grid md:grid-cols-[auto_1fr] md:mt-8 -mx-4 lg:mx-0 gap-8">
       <div className="md:-translate-y-12 max-h-[400px] lg:mx-8 ml-4 w-fit">
         <Image
           src={vernon}
           alt="Vernon M. Hall Jr."
-          className="max-h-full w-auto border-2 border-black rounded"
+          className="max-h-full w-auto border-2 border-black rounded-sm"
         />
       </div>
       <div className="max-w-prose flex flex-col grow mr-auto px-4">
@@ -75,7 +75,7 @@ export const Team = () => {
                 of fastest growing businesses the past two years with over 500
                 employees and revenues exceeding $50M.
               </p>
-              <div className="text-sm mt-4 bg-brand p-4 rounded relative isolate">
+              <div className="text-sm mt-4 bg-brand p-4 rounded-sm relative isolate">
                 <p>
                   “With over four decades of experience in carrier and
                   amphibious aviation, Don Buzard and I recognize the value and
@@ -121,7 +121,7 @@ export const Team = () => {
                 AVMAC owners&apos; corporate experiences is invaluable, which is
                 why Olokun has asked Don to be on the Board of Advisors.
               </p>
-              <div className="text-sm mt-4 bg-brand p-4 rounded relative isolate">
+              <div className="text-sm mt-4 bg-brand p-4 rounded-sm relative isolate">
                 <p>
                   &quot;AVMAC has mutually benefitted from our Mentor/Protégé
                   relationship with Olokun over the past two years due to the
@@ -160,7 +160,7 @@ export const Team = () => {
                 in these areas as a coach and mentor to help others develop as
                 managers, leaders.
               </p>
-              {/* <p className="text-sm mt-4 bg-brand p-4 rounded"></p> */}
+              {/* <p className="text-sm mt-4 bg-brand p-4 rounded-sm"></p> */}
             </div>
           </div>
         </div>

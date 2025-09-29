@@ -15,7 +15,7 @@ export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="h-[--navbar-height]">
+    <div className="h-(--navbar-height)">
       <nav
         className="max-w-7xl mx-auto flex justify-between items-center px-4 py-4"
         aria-label="Primary Navigation"
@@ -54,37 +54,37 @@ export default function Nav() {
         </div>
         <div className="hidden md:flex relative isolate">
           <Link
-            className="px-4 rounded-full relative overflow-hidden after:active:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            className="px-4 rounded-full relative overflow-hidden active:after:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden after:active:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            className="px-4 rounded-full relative overflow-hidden active:after:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
             href="/about"
           >
             About
           </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden after:active:bg-brand after:transition-all after:absolute after:-translate-x-[calc(100%+2px)] hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            className="px-4 rounded-full relative overflow-hidden active:after:bg-brand after:transition-all after:absolute after:-translate-x-[calc(100%+2px)] hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
             href="/capabilities"
           >
             Capabilities
           </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden after:active:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            className="px-4 rounded-full relative overflow-hidden active:after:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
             href="/work"
           >
             Our Work
           </Link>
           <Link
             href="/completecloud"
-            className="hidden lg:block px-4 rounded-full relative overflow-hidden after:active:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            className="hidden lg:block px-4 rounded-full relative overflow-hidden active:after:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
           >
             CompleteCloud
           </Link>
           <Link
-            className="px-4 rounded-full relative overflow-hidden after:active:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
+            className="px-4 rounded-full relative overflow-hidden active:after:bg-brand after:transition-all after:absolute after:-translate-x-full hover:after:translate-x-0 after:inset-0 after:-z-10 after:rounded-full after:bg-zinc-700/60"
             href="/contact"
           >
             Contact
@@ -92,7 +92,7 @@ export default function Nav() {
         </div>
       </nav>
       <nav
-        className={`absolute h-[calc(100vh-var(--navbar-height))] top-[--navbar-height] left-0 z-30 bg-black/20 backdrop-blur-sm w-screen md:hidden transition-all ${
+        className={`absolute h-[calc(100vh-var(--navbar-height))] top-(--navbar-height) left-0 z-30 bg-black/20 backdrop-blur-xs w-screen md:hidden transition-all ${
           !isMenuOpen ? "-translate-x-full" : "translate-x-0"
         }`}
         onClick={(e) => {

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Work() {
   return (
-    <div className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <div className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">Our Work</h1>
         <section className="flex flex-col mb-20">
@@ -37,10 +37,10 @@ export default function Work() {
             NSWCDD Seaport Next Generation (Seaport NXG)
           </span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Engineering &amp; Technical Services
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               01/02/2025 - 01/01/2029
             </span>
           </div>
@@ -68,10 +68,10 @@ export default function Work() {
             Life Cycle Engineering (LCE) (Subcontractor), CNAF
           </span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Engineering &amp; Technical Services
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               03/23/2021 - Current
             </span>
           </div>
@@ -127,7 +127,7 @@ export default function Work() {
               CVN IPT Mock Availability Support
             </li>
           </ul>
-          {/* <Link className="mt-8 text-[--link] flex gap-2 items-center" href="#">
+          {/* <Link className="mt-8 text-(--link) flex gap-2 items-center" href="#">
             <span>View Feedback</span>
             <FaArrowRight />
           </Link> */}
@@ -138,10 +138,10 @@ export default function Work() {
           </span>
           <span className="font-bold text-xl mt-4">Seaside Staffing LLC</span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               CompleteCloud Services
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               11/03/2023 - Current
             </span>
           </div>
@@ -158,10 +158,10 @@ export default function Work() {
             KD Shipyard Repairs LLC (Subcontractor)
           </span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Engineering &amp; Technical Services
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               11/03/2023 - Current
             </span>
           </div>
@@ -189,10 +189,10 @@ export default function Work() {
             VTG Defense (Subcontractor), NAVWAR
           </span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Information Technology
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               12/16/2022 - Current
             </span>
           </div>
@@ -213,10 +213,10 @@ export default function Work() {
           <span className="text-sm text-zinc-600">OLK-001-22-01</span>
           <span className="font-bold text-xl mt-4">AVMAC LLC</span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Consulting Services - Ship Integration / AIT
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               12/03/2021 - Current
             </span>
           </div>
@@ -238,10 +238,10 @@ export default function Work() {
           </span>
           <span className="font-bold text-xl mt-4">LPI Technical Services</span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Consulting Services - Ship Repair / AIT
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               01/27/2023 - Current
             </span>
           </div>
@@ -262,10 +262,10 @@ export default function Work() {
           </span>
           <span className="font-bold text-xl mt-4">Seaside Staffing LLC</span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Consulting Services - Ship Repair / AIT
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               03/20/2023 - Current
             </span>
           </div>
@@ -287,10 +287,10 @@ export default function Work() {
           <span className="text-sm text-zinc-600">C373230_MKT230014</span>
           <span className="font-bold text-xl mt-4">QED Systems, Inc.</span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Consulting Services - Ship Repair / AIT
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               03/30/2023 - 04/17/2023
             </span>
           </div>
@@ -306,10 +306,10 @@ export default function Work() {
           </span>
           <span className="font-bold text-xl mt-4">i-Mazing Solutions</span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Consulting Services - Information Technology
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               01/12/2022 - 12/31/2022
             </span>
           </div>
@@ -330,10 +330,10 @@ export default function Work() {
             kSARIA Service Corporation
           </span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               Consulting Services - Electrical/Fiber Installation
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               02/07/2022 - 07/31/2022
             </span>
           </div>
@@ -357,10 +357,10 @@ export default function Work() {
             Pugh Associates of Florida, LLC
           </span>
           <div className="flex flex-wrap gap-2 text-sm">
-            <span className="bg-brand p-2 rounded text-white font-semibold">
+            <span className="bg-brand p-2 rounded-sm text-white font-semibold">
               CompleteCloud Services
             </span>
-            <span className="bg-zinc-200 p-2 rounded">
+            <span className="bg-zinc-200 p-2 rounded-sm">
               02/07/2022 - 07/31/2022
             </span>
           </div>
