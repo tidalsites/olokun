@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function Capabilities() {
   return (
-    <div className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <div className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">Capabilities</h1>
 
@@ -48,7 +48,7 @@ export default function Capabilities() {
             }
             return isAltPosition ? (
               <section
-                className="xl:grid grid-cols-[auto,1fr] gap-x-20"
+                className="xl:grid grid-cols-[auto_1fr] gap-x-20"
                 key={`capability_${i}`}
               >
                 <div className="hidden xl:row-span-2 w-full h-full xl:flex">
@@ -77,7 +77,7 @@ export default function Capabilities() {
               </section>
             ) : (
               <section
-                className="xl:grid grid-cols-[1fr,auto] gap-x-20"
+                className="xl:grid grid-cols-[1fr_auto] gap-x-20"
                 key={`capability_${i}`}
               >
                 <h2
@@ -101,7 +101,7 @@ export default function Capabilities() {
               </section>
             );
           })}
-          <section className="xl:grid grid-cols-[1fr,auto] mb-20">
+          <section className="xl:grid grid-cols-[1fr_auto] mb-20">
             <h2 className={`${tenor.className} text-4xl text-zinc-800 mb-8`}>
               CompleteCloud
             </h2>
@@ -122,19 +122,19 @@ export default function Capabilities() {
                 affordability. Here is why:
               </p>
               <ul className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 xl:pr-20">
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     Predictable Cost
                   </span>
                   <p>Predictable IT budget, no capital expenses</p>
                 </li>
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     Business Continuity
                   </span>
                   <p>All data backed up in secondary data center</p>
                 </li>
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     Mobile Flexibility
                   </span>
@@ -143,7 +143,7 @@ export default function Capabilities() {
                     travel as in the office with no clunky VPN connection
                   </p>
                 </li>
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     Collaboration Tools
                   </span>
@@ -152,7 +152,7 @@ export default function Capabilities() {
                     Communications Suite
                   </p>
                 </li>
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     Robust Security
                   </span>
@@ -161,13 +161,13 @@ export default function Capabilities() {
                     ground up with security in mind
                   </p>
                 </li>
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     Industry Compliance
                   </span>
                   <p>Audit ready, all the time (FDIC, NIST, HIPAA, CMMC)</p>
                 </li>
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     Available Support
                   </span>
@@ -176,7 +176,7 @@ export default function Capabilities() {
                     resolution from our 24/7 US-based team
                   </p>
                 </li>
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     Scalability
                   </span>
@@ -185,7 +185,7 @@ export default function Capabilities() {
                     valuation for sale
                   </p>
                 </li>
-                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded max-w-[35ch]">
+                <li className="flex flex-col gap-2 p-2 text-sm bg-white rounded-sm max-w-[35ch]">
                   <span className="uppercase border-b-2 border-b-brand pb-2 w-fit pr-4 font-semibold">
                     IT Management
                   </span>
@@ -197,7 +197,7 @@ export default function Capabilities() {
               </ul>
 
               <Link
-                className="bg-black text-white border-2 border-black rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit h-fit mt-8"
+                className="bg-black text-white border-2 border-black rounded-sm px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit h-fit mt-8"
                 href="/completecloud"
               >
                 <div className="flex p-2 rounded-full bg-white text-black items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">

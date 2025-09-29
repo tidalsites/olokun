@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">About Us</h1>
         <div className="flex flex-col">
@@ -29,7 +29,7 @@ export default function About() {
               local, state, and federal government organizations, military,
               private industry, and public entities.
             </p>
-            <p className="max-w-prose leading-6 py-4 bg-white p-4 row-span-2 xl:text-center flex items-center -mx-4 xl:rounded-lg xl:font-semibold xl:px-12 xl:outline outline-4 -outline-offset-8 outline-brand">
+            <p className="max-w-prose leading-6 py-4 bg-white p-4 row-span-2 xl:text-center flex items-center -mx-4 xl:rounded-lg xl:font-semibold xl:px-12 xl:outline-solid outline-4 -outline-offset-8 outline-brand">
               Olokun, LLC (UEID: M7JSB8E7KB73, Cage Code: 95V71) is registered
               in the System of Award Management (SAM) under primary NAICS 541330
               for Engineering Services and various secondary NAICS codes
@@ -55,7 +55,7 @@ export default function About() {
           >
             Who We Serve
           </h2>
-          <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0">
+          <div className="bg-white lg:rounded-sm col-span-2 md:col-span-1 -mx-4 md:mx-0">
             <div className="bg-black/30 bg-blend-multiply bg-[url(/gov.webp)] h-[250px] bg-cover"></div>
             <h3 className="p-4 text-xl font-semibold border-b-2 border-b-brand">
               Government
@@ -71,7 +71,7 @@ export default function About() {
               at a reasonable cost.
             </p>
           </div>
-          <div className="bg-white lg:rounded col-span-2 md:col-span-1 -mx-4 md:mx-0 flex flex-col">
+          <div className="bg-white lg:rounded-sm col-span-2 md:col-span-1 -mx-4 md:mx-0 flex flex-col">
             <div className="bg-black/30 bg-blend-multiply bg-[url(/commercial.webp)] h-[250px] bg-cover"></div>
 
             <h3 className="p-4 text-xl font-semibold border-b-2 border-b-brand">
@@ -88,7 +88,7 @@ export default function About() {
             </p>
           </div>
           <Link
-            className="bg-black text-white border-2 border-black rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit"
+            className="bg-black text-white border-2 border-black rounded-sm px-4 py-1 transition-all flex gap-2 items-center justify-center group w-fit"
             href="/capabilities"
           >
             <div className="flex p-2 rounded-full bg-white text-black items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">

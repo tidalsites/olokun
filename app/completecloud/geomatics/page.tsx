@@ -9,7 +9,7 @@ import data from "@/public/casestudies/data.png";
 
 export default function Engineering() {
   return (
-    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-[--navbar-height] px-4 flex flex-col bg-zinc-200 text-black">
+    <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
         <h1 className="mb-20">Geomatics</h1>
         <div className="flex flex-col">
@@ -30,19 +30,19 @@ export default function Engineering() {
             clients had before they decided to make the jump to CompleteCloud.
           </p>
           <ul className="flex flex-wrap gap-4">
-            <li className="bg-white p-4 rounded border-b-2 border-b-brand">
+            <li className="bg-white p-4 rounded-sm border-b-2 border-b-brand">
               5 locations in different states
             </li>
-            <li className="bg-white p-4 rounded border-b-2 border-b-brand">
+            <li className="bg-white p-4 rounded-sm border-b-2 border-b-brand">
               Over 100 employees
             </li>
-            <li className="bg-white p-4 rounded border-b-2 border-b-brand">
+            <li className="bg-white p-4 rounded-sm border-b-2 border-b-brand">
               50% are high-end CAD graphics users
             </li>
-            <li className="bg-white p-4 rounded border-b-2 border-b-brand max-w-[40ch]">
+            <li className="bg-white p-4 rounded-sm border-b-2 border-b-brand max-w-[40ch]">
               30 TB of data, which resulted in thousand in backup costs annually
             </li>
-            <li className="bg-white p-4 rounded border-b-2 border-b-brand max-w-[40ch]">
+            <li className="bg-white p-4 rounded-sm border-b-2 border-b-brand max-w-[40ch]">
               Complex & expensive server infrastructure needing to be refreshed
             </li>
           </ul>
@@ -69,7 +69,7 @@ export default function Engineering() {
             to working from home because of the CompleteCloud Platform.
           </p>
           <ul className="grid gap-4 sm:grid-cols-2">
-            <li className="bg-white p-4 rounded flex flex-col">
+            <li className="bg-white p-4 rounded-sm flex flex-col">
               <span className="font-semibold">
                 CompleteCloud Infrastructure:
               </span>
@@ -80,7 +80,7 @@ export default function Engineering() {
                 personal computers or work laptops.
               </span>
             </li>
-            <li className="bg-white p-4 rounded flex flex-col">
+            <li className="bg-white p-4 rounded-sm flex flex-col">
               <span className="font-semibold">Support:</span>
               <span className="mt-2 text-zinc-700">
                 Our support team was still there, 24x7, whenever they had
@@ -88,7 +88,7 @@ export default function Engineering() {
                 tables, living room couches, or patios).
               </span>
             </li>
-            <li className="bg-white p-4 rounded flex flex-col">
+            <li className="bg-white p-4 rounded-sm flex flex-col">
               <span className="font-semibold">Productivity:</span>
               <span className="mt-2 text-zinc-700">
                 Chat, video, and file sharing applications helped employees to
@@ -96,7 +96,7 @@ export default function Engineering() {
                 incredibly spread out.
               </span>
             </li>
-            <li className="bg-white p-4 rounded flex flex-col">
+            <li className="bg-white p-4 rounded-sm flex flex-col">
               <span className="font-semibold">Security:</span>
               <span className="mt-2 text-zinc-700">
                 Just because you&apos;re working from home doesn&apos;t mean you

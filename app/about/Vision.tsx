@@ -29,9 +29,9 @@ export const Vision = () => {
           <li className="text-xl py-2 border-b-2 border-b-brand">Innovative</li>
         </ul>
       </div>
-      <div className="grid max-w-prose bg-white p-4 col-span-2 md:col-span-1 grid-rows-[subgrid] row-span-4">
+      <div className="grid max-w-prose bg-white p-4 col-span-2 md:col-span-1 grid-rows-subgrid row-span-4">
         <p>Guiding Principles</p>
-        <ul className="row-span-3 grid grid-rows-[subgrid]">
+        <ul className="row-span-3 grid grid-rows-subgrid">
           <li>
             <p className="flex items-center gap-2 py-4">
               <FaCheckCircle className="text-2xl text-brand" />
@@ -70,9 +70,9 @@ export const Vision = () => {
           </li>
         </ul>
       </div>
-      <div className="grid max-w-prose bg-white p-4 col-span-2 md:col-span-1 grid-rows-[subgrid] row-span-4">
+      <div className="grid max-w-prose bg-white p-4 col-span-2 md:col-span-1 grid-rows-subgrid row-span-4">
         <p>Attributes That Set Us Apart</p>
-        <ul className="row-span-3 grid grid-rows-[subgrid]">
+        <ul className="row-span-3 grid grid-rows-subgrid">
           <li>
             <p className="flex items-center gap-2 py-4">
               <FaCheckCircle className="text-2xl text-brand" />

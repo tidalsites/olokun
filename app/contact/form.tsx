@@ -40,7 +40,7 @@ export const ContactForm = () => {
 
   return (
     <form
-      className="lg:grid lg:grid-cols-2 lg:row-span-2 gap-8 px-8 py-12 bg-white border-[1px] border-zinc-300 shadow-[0_2px_4px_rgba(0,0,0,.3)]"
+      className="lg:grid lg:grid-cols-2 lg:row-span-2 gap-8 px-8 py-12 bg-white border border-zinc-300 shadow-[0_2px_4px_rgba(0,0,0,.3)]"
       onSubmit={handleSubmit(sendContactRequest)}
     >
       <div className="flex flex-col gap-8 mb-8">
@@ -52,7 +52,7 @@ export const ContactForm = () => {
             {...register("first_name")}
           />
           {errors && errors["first_name"] && (
-            <span className="text-xs text-brand mt-[1px]">
+            <span className="text-xs text-brand mt-px">
               {errors["first_name"].message}
             </span>
           )}
@@ -65,7 +65,7 @@ export const ContactForm = () => {
             {...register("last_name")}
           />
           {errors && errors["last_name"] && (
-            <span className="text-xs text-brand mt-[1px]">
+            <span className="text-xs text-brand mt-px">
               {errors["last_name"].message}
             </span>
           )}
@@ -78,7 +78,7 @@ export const ContactForm = () => {
             {...register("email")}
           />
           {errors && errors["email"] && (
-            <span className="text-xs text-brand mt-[1px]">
+            <span className="text-xs text-brand mt-px">
               {errors["email"].message}
             </span>
           )}
@@ -91,21 +91,21 @@ export const ContactForm = () => {
             {...register("phone")}
           />
           {errors && errors["phone"] && (
-            <span className="text-xs text-brand mt-[1px]">
+            <span className="text-xs text-brand mt-px">
               {errors["phone"].message}
             </span>
           )}
         </label>
       </div>
       <div className="flex flex-col gap-8 mb-8">
-        <div className="flex w-full max-w-xs flex-col gap-2 bg-zinc-200 rounded">
-          <div className="flex justify-between items-center rounded p-2">
+        <div className="flex w-full max-w-xs flex-col gap-2 bg-zinc-200 rounded-sm">
+          <div className="flex justify-between items-center rounded-sm p-2">
             <span className="text-sm">Interested in specific services?</span>
           </div>
-          <div className="flex flex-col bg-zinc-100 rounded p-2 grow m-2">
+          <div className="flex flex-col bg-zinc-100 rounded-sm p-2 grow m-2">
             <label
               htmlFor="engineering"
-              className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded"
+              className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm"
             >
               Engineering
               <input
@@ -118,7 +118,7 @@ export const ContactForm = () => {
             </label>
             <label
               htmlFor="logistics"
-              className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded"
+              className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm"
             >
               Logistics
               <input
@@ -129,7 +129,7 @@ export const ContactForm = () => {
               />
               {watch("logistics") && <PiCheckLight />}
             </label>
-            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded">
+            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               Consulting
               <input
                 className="h-0 w-0 absolute opacity-0"
@@ -138,7 +138,7 @@ export const ContactForm = () => {
               />
               {watch("consulting") && <PiCheckLight />}
             </label>
-            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded">
+            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               Information Technology
               <input
                 className="h-0 w-0 absolute opacity-0"
@@ -147,7 +147,7 @@ export const ContactForm = () => {
               />
               {watch("it") && <PiCheckLight />}
             </label>
-            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded">
+            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               Business Development
               <input
                 className="h-0 w-0 absolute opacity-0"
@@ -156,7 +156,7 @@ export const ContactForm = () => {
               />
               {watch("business_development") && <PiCheckLight />}
             </label>
-            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded">
+            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               Career Opportunity
               <input
                 className="h-0 w-0 absolute opacity-0"
@@ -165,7 +165,7 @@ export const ContactForm = () => {
               />
               {watch("career") && <PiCheckLight />}
             </label>
-            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded">
+            <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               General Inquiry
               <input
                 className="h-0 w-0 absolute opacity-0"
@@ -185,7 +185,7 @@ export const ContactForm = () => {
           placeholder="Describe what you are looking for"
         ></textarea>
         {errors && errors["description"] && (
-          <span className="text-xs text-brand mt-[1px]">
+          <span className="text-xs text-brand mt-px">
             {errors["description"].message}
           </span>
         )}

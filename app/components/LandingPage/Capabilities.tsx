@@ -66,7 +66,7 @@ export const Capabilities = () => {
   ]);
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-[auto,auto] min-h-screen relative overflow-hidden">
+    <section className="grid grid-cols-1 md:grid-cols-[auto_auto] min-h-screen relative overflow-hidden">
       <div className="absolute bottom-0 left-0 max-w-2xl hidden md:block">
         <Image src={bg} alt="Ingenuity decoration" />
       </div>
@@ -83,7 +83,7 @@ export const Capabilities = () => {
             logistics, and information technology.
           </p>
           <Link
-            className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group"
+            className="bg-white text-neutral-900 border-2 border-white rounded-sm px-4 py-1 transition-all flex gap-2 items-center justify-center group"
             href="/capabilities"
           >
             <div className="flex p-2 rounded-full bg-black text-white items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
@@ -181,14 +181,14 @@ export const Capabilities = () => {
           <span className="font-normal text-sm px-4 col-span-3 lg:col-span-4 xl:col-span-5 2xl:px-8 w-full">
             NAICS Codes:
           </span>
-          <span className="border-r-[1px] border-r-zinc-300 px-4">541330</span>
-          <span className="border-r-[1px] border-r-zinc-300 px-4">541310</span>
-          <span className="border-r-[1px] border-r-zinc-300 px-4">336611</span>
-          <span className="border-r-[1px] border-r-zinc-300 px-4">541512</span>
-          <span className="border-r-[1px] border-r-zinc-300 px-4">541611</span>
-          <span className="border-r-[1px] border-r-zinc-300 px-4">541618</span>
-          <span className="border-r-[1px] border-r-zinc-300 px-4">541990</span>
-          <span className="border-r-[1px] border-r-zinc-300 px-4">541690</span>
+          <span className="border-r border-r-zinc-300 px-4">541330</span>
+          <span className="border-r border-r-zinc-300 px-4">541310</span>
+          <span className="border-r border-r-zinc-300 px-4">336611</span>
+          <span className="border-r border-r-zinc-300 px-4">541512</span>
+          <span className="border-r border-r-zinc-300 px-4">541611</span>
+          <span className="border-r border-r-zinc-300 px-4">541618</span>
+          <span className="border-r border-r-zinc-300 px-4">541990</span>
+          <span className="border-r border-r-zinc-300 px-4">541690</span>
           <span className="px-4">541614</span>
         </div>
       </div>

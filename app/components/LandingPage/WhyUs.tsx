@@ -11,7 +11,7 @@ const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
 
 export const WhyUs = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-[auto,auto] min-h-screen relative pb-20 overflow-x-hidden">
+    <section className="grid grid-cols-1 md:grid-cols-[auto_auto] min-h-screen relative pb-20 overflow-x-hidden">
       <div className="items-center justify-center hidden lg:flex mt-20 px-8 max-h-[600px]">
         <Image src={graphic} alt="Decorative" className="max-h-full w-auto" />
       </div>
@@ -116,7 +116,7 @@ export const WhyUs = () => {
           </motion.li>
         </motion.ul>
         <Link
-          className="bg-white text-neutral-900 border-2 border-white rounded px-4 py-1 transition-all flex gap-2 items-center justify-center group"
+          className="bg-white text-neutral-900 border-2 border-white rounded-sm px-4 py-1 transition-all flex gap-2 items-center justify-center group"
           href="/about"
         >
           <div className="flex p-2 rounded-full bg-black text-white items-center justify-center group-hover:pl-6 group-hover:justify-end transition-all">
