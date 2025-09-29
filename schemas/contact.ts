@@ -4,7 +4,6 @@ export const ContactSchema = z.object({
   first_name: z.string().min(1, "Required"),
   last_name: z.string().min(1, "Required"),
   email: z
-    .string()
     .email()
     .min(4, "Required")
     .max(50, "Cannot be more than 50 characters"),
