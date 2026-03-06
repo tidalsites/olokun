@@ -1,11 +1,5 @@
 import { Tenor_Sans } from "next/font/google";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
-import Image from "next/image";
-
-import usernetwork from "@/public/casestudies/user-network.png";
-import sites from "@/public/casestudies/sites.png";
-import customer from "@/public/casestudies/customer.png";
-import data from "@/public/casestudies/data.png";
 
 export default function EducationalInstitution() {
   return (

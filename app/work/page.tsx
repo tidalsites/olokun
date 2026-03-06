@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import { Tenor_Sans } from "next/font/google";
-import Link from "next/link";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
-import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Our Achievements - Olokun LLC Success Stories",

@@ -11,11 +11,11 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 type ContactResponse = {
   success: boolean;
   error?: ZodError<TContactSchema> | string;
-  data?: any;
+  data?: unknown;
 };
 
 export const sendContactEmail = async (
-  formData: TContactSchema
+  formData: TContactSchema,
 ): Promise<ContactResponse> => {
   const result = ContactSchema.safeParse(formData);
 
