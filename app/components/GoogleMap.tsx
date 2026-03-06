@@ -12,13 +12,13 @@ export const Map = () => {
 
   if (!isLoaded)
     return (
-      <div className="flex flex-col justify-center w-full h-full mx-auto min-h-[400px] text-center">
+      <div className="flex flex-col justify-center w-full h-full mx-auto min-h-100 text-center">
         <PiSpinner className="text-5xl animate-spin mx-auto" />
         <span>Loading Map</span>
       </div>
     );
   return (
-    <div className="w-full min-h-[400px]">
+    <div className="w-full min-h-100">
       <GoogleMap
         zoom={14}
         center={location}
