@@ -8,6 +8,12 @@ import { Map } from "../components/GoogleMap";
 import { ContactForm } from "./form";
 import { Metadata } from "next";
 
+import { Suspense, lazy } from "react";
+
+const MapWithNoSSR = lazy(() =>
+  import("../components/GoogleMap").then((mod) => ({ default: mod.Map })),
+);
+
 export const metadata: Metadata = {
   title: "Get in Touch with Olokun LLC - Contact Information",
   description:
