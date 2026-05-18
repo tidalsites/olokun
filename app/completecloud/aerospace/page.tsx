@@ -5,7 +5,7 @@ export default function Aerospace() {
   return (
     <section className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
-        <h1 className="mb-20">Aerospace</h1>
+        <h1 className="mb-20 text-base">Aerospace</h1>
         <div className="flex flex-col">
           <h2 className={`${tenor.className} text-4xl text-zinc-800`}>
             Problem

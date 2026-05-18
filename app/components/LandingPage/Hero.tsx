@@ -1,10 +1,21 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { HeroHeading } from "./HeroHeading";
+import Image from "next/image";
+import heroImage from "@/public/mobile-bg.webp";
 
 export const Hero = () => {
   return (
-    <section className="bg-fixed gap-8 grid lg:place-content-center min-h-[calc(100vh-var(--navbar-height))] lg:h-screen w-screen relative isolate px-4 bg-[url(/mobile-bg.webp)] lg:bg-none lg:bg-black bg-black/90 bg-center bg-cover bg-blend-multiply">
+    <section className="gap-8 grid lg:place-content-center min-h-[calc(100vh-var(--navbar-height))] lg:h-screen w-screen relative isolate px-4 bg-black">
+      <Image
+        src={heroImage}
+        alt="Hero"
+        fill={true}
+        objectFit="cover"
+        className="opacity-10 -z-10 lg:hidden"
+        loading="eager"
+        preload
+      />
       <div className="absolute inset-0 max-h-screen overflow-hidden -z-20 hidden lg:block">
         <video
           className="w-[177.77777778vh] min-w-full min-h-[56.25vw] h-full object-cover"

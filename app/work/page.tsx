@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import { Tenor_Sans } from "next/font/google";
-import Link from "next/link";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
-import { FaArrowRight } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Our Achievements - Olokun LLC Success Stories",
@@ -14,7 +12,7 @@ export default function Work() {
   return (
     <div className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
-        <h1 className="mb-20">Our Work</h1>
+        <h1 className="mb-20 text-base">Our Work</h1>
         <section className="flex flex-col mb-20">
           <h2 className={`${tenor.className} text-4xl text-zinc-800`}>
             Discover the Olokun Difference

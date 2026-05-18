@@ -1,23 +1,53 @@
 "use client";
 
 import { PiCheckLight, PiSpinner } from "react-icons/pi";
-import { useForm } from "react-hook-form";
+import { Control, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { TContactSchema, ContactSchema } from "@/schemas/contact";
 import { RiMailSendLine } from "react-icons/ri";
 import { sendContactEmail } from "@/lib/sendEmail";
 import { toast } from "react-toastify";
+import { useWatch } from "react-hook-form";
 
+const CreateWatcher = ({
+  control,
+  field,
+}: {
+  control: Control<TContactSchema>;
+  field: keyof TContactSchema;
+}) => {
+  const value = useWatch({
+    control,
+    name: field,
+  });
+
+  return typeof value === "boolean" && value ? <PiCheckLight /> : null;
+};
 export const ContactForm = () => {
   const {
     register,
     handleSubmit,
     reset,
-    watch,
     formState: { errors, isSubmitting },
+    control,
   } = useForm<TContactSchema>({
     resolver: zodResolver(ContactSchema),
   });
+
+  const watchers = [
+    {
+      engineering: CreateWatcher({ control, field: "engineering" }),
+      logistics: CreateWatcher({ control, field: "logistics" }),
+      consulting: CreateWatcher({ control, field: "consulting" }),
+      it: CreateWatcher({ control, field: "it" }),
+      business_development: CreateWatcher({
+        control,
+        field: "business_development",
+      }),
+      career: CreateWatcher({ control, field: "career" }),
+      general: CreateWatcher({ control, field: "general" }),
+    },
+  ];
 
   const sendContactRequest = async (data: TContactSchema) => {
     const results = await sendContactEmail(data);
@@ -114,7 +144,7 @@ export const ContactForm = () => {
                 {...register("engineering")}
                 id="engineering"
               />
-              {watch("engineering") && <PiCheckLight />}
+              {watchers[0].engineering}
             </label>
             <label
               htmlFor="logistics"
@@ -127,7 +157,7 @@ export const ContactForm = () => {
                 {...register("logistics")}
                 id="logistics"
               />
-              {watch("logistics") && <PiCheckLight />}
+              {watchers[0].logistics}
             </label>
             <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               Consulting
@@ -136,7 +166,7 @@ export const ContactForm = () => {
                 type="checkbox"
                 {...register("consulting")}
               />
-              {watch("consulting") && <PiCheckLight />}
+              {watchers[0].consulting}
             </label>
             <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               Information Technology
@@ -145,7 +175,7 @@ export const ContactForm = () => {
                 type="checkbox"
                 {...register("it")}
               />
-              {watch("it") && <PiCheckLight />}
+              {watchers[0].it}
             </label>
             <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               Business Development
@@ -154,7 +184,7 @@ export const ContactForm = () => {
                 type="checkbox"
                 {...register("business_development")}
               />
-              {watch("business_development") && <PiCheckLight />}
+              {watchers[0].business_development}
             </label>
             <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               Career Opportunity
@@ -163,7 +193,7 @@ export const ContactForm = () => {
                 type="checkbox"
                 {...register("career")}
               />
-              {watch("career") && <PiCheckLight />}
+              {watchers[0].career}
             </label>
             <label className="relative hover:text-zinc-800/80 hover:bg-zinc-200 cursor-pointer flex items-center justify-between rounded-sm">
               General Inquiry
@@ -172,7 +202,7 @@ export const ContactForm = () => {
                 type="checkbox"
                 {...register("general")}
               />
-              {watch("general") && <PiCheckLight />}
+              {watchers[0].general}
             </label>
           </div>
         </div>

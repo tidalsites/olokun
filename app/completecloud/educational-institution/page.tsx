@@ -1,17 +1,11 @@
 import { Tenor_Sans } from "next/font/google";
 const tenor = Tenor_Sans({ weight: "400", subsets: ["latin"] });
-import Image from "next/image";
-
-import usernetwork from "@/public/casestudies/user-network.png";
-import sites from "@/public/casestudies/sites.png";
-import customer from "@/public/casestudies/customer.png";
-import data from "@/public/casestudies/data.png";
 
 export default function EducationalInstitution() {
   return (
     <div className="min-h-[calc(100vh-var(--navbar-height))] h-full pt-(--navbar-height) px-4 flex flex-col bg-zinc-200 text-black">
       <div className="max-w-7xl mx-auto w-full">
-        <h1 className="mb-20">Educational Institution</h1>
+        <h1 className="mb-20 text-base">Educational Institution</h1>
         <div className="flex flex-col">
           <section>
             <h2 className={`${tenor.className} text-4xl text-zinc-800`}>
